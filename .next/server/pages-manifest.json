@@ -1,0 +1,15 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/aaaa": "pages/aaaa.js",
+  "/api/hello": "pages/api/hello.js",
+  "/automatic": "pages/automatic.js",
+  "/book": "pages/book.js",
+  "/graphics": "pages/graphics.js",
+  "/": "pages/index.js",
+  "/learning-trade": "pages/learning-trade.js",
+  "/limited-stonks": "pages/limited-stonks.js",
+  "/strategy-and-risks": "pages/strategy-and-risks.js",
+  "/vip-stonks": "pages/vip-stonks.js"
+}
