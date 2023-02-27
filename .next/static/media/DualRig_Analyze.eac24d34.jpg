@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+ <html> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>NinjaTrader</title>
+        <meta name="description" content>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/Application_1.css">
+                <script src="../js/modernizr-2.6.2.min.js"></script>
+        <style type="text/css">
+            body{
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+            }
+            footer {
+                margin: auto auto 0 auto;
+            }
+        </style>
+
+    </head>
+    <body>
+        <a href="/GetStarted" target="_self" class="stickyCTA noOP" id="FreeDownload">Free! Download Now</a>        <!-- NinjaTrader Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TG6NSPR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header>
+	<div id="top_nav" class="l-row b-black">
+		<div class="l-block l-np">
+			<ul id="black_bar" class="f-nav">
+				<li id="language_selector">
+					<span class="header">Language</span>
+					<div id="languageM" class="l-twelve DDM sl_opaque">
+						<div class="l-twelve">
+							<div class="l-six">
+								<a href="/img/DualRig_Analyze.jpg" target="_self" class="l-twelve ddmBlock">
+									<p class="l-twelve">English</p>
+								</a>
+								<a href="/de/img/DualRig_Analyze.jpg" target="_self" class="l-twelve ddmBlock">
+									<p class="l-twelve">Deutsch</p>
+								</a>
+								<a href="/es/img/DualRig_Analyze.jpg" target="_self" class="l-twelve ddmBlock">
+									<p class="l-twelve">Espa&ntilde;ol</p>
+								</a>
+								<a href="/fr/img/DualRig_Analyze.jpg" target="_self" class="l-twelve ddmBlock">
+									<p class="l-twelve">Fran&ccedil;ais</p>
+								</a>
+							</div>
+							
+							<div class="l-six l-nmr">
+								<a href="/it/img/DualRig_Analyze.jpg" target="_self" class="l-twelve ddmBlock">
+									<p class="l-twelve">Italiano</p>
+								</a>
+								<a href="/pt/img/DualRig_Analyze.jpg" target="_self" class="l-twelve ddmBlock">
+									<p class="l-twelve">Portugu&ecirc;s</p>
+								</a>
+								<a href="/ru/img/DualRig_Analyze.jpg" target="_self" class="l-twelve ddmBlock">
+									<p class="l-twelve">Русский</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<a href="tel:+3122621289" id="Contact">Sales: 312.262.1289</a>
+					<ul>
+						<li><a href="/Help">Contact Support</a></li>
+						<li><a href="/ContactUs">All Numbers &amp; Contacts</a></li>
+					</ul>
+				</li>
+				<li class="LogIn">
+                 <a href="https://account.ninjatrader.com/welcome" target="_blank" id="LogInL">Log In</a>
+             </li>
+				<li class="account"><a href="https://account.ninjatrader.com/register" target="_self">Open Account</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="bottom_nav" class="l-row b-white">
+		<div class="l-block l-np">
+			<ul id="main_nav" class="f-nav">
+				<li id="logo"><a href="/">NinjaTrader</a></li>
+				<li>
+					<span class="header">Brokerage</span>
+					<div id="brokerageM" class="l-twelve DDM">
+						<div class="l-twelve bdrBLGray l-pb1-5">
+							<a href="/Futures" target="_self" class="ddmBlock l-twelve">
+								<p class="l-twelve t-base f-bold t-center">Trade Futures</p>
+								<p class="l-twelve f-size14 f-l-height18">Save on trades with discount commissions &amp; low margins </p>
+							</a>
+						</div>
+						<div class="l-four l-mt1-5">
+							<a href="/Micro-Emini-Futures" target="_self" class="l-twelve ddmBlock">
+								<p class="l-twelve t-base f-bold t-left">Micro E-minis</p>
+								<p class="l-twelve f-size14 f-l-height18 t-left">Trade the most liquid futures for less</p>
+							</a>
+						</div>
+
+						<div class="l-four l-mt1-5">
+							<a href="/Micro-Crude-Oil-Futures" target="_self" class="l-twelve ddmBlock">
+								<p class="l-twelve t-base f-bold t-left">Micro Crude Oil</p>
+								<p class="l-twelve f-size14 f-l-height18 t-left">Trade the world&rsquo;s most popular oil contract</p>
+							</a>
+						</div>
+							
+						<div class="l-four l-nmr l-mt1-5">
+							<a href="/Nano-Bitcoin-Futures.php" target="_self" class="l-twelve ddmBlock">
+								<p class="l-twelve t-base f-bold t-left">Nano Bitcoin</p>
+								<p class="l-twelve f-size14 f-l-height18 t-left">Trade Bitcoin futures at a fraction of the cost</p>
+							</a>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<span class="header">Platform</span>
+					<div id="platformM" class="l-twelve DDM">
+						<div class="l-twelve bdrBLGray l-pb1-5">
+							<div class="l-four">
+								<a href="/Analyze" target="_self" class="l-twelve ddmBlock">
+									<p class="l-twelve t-base f-bold t-left">Chart</p>
+									<p class="l-twelve f-size14 f-l-height18 t-left">Uncover trading ideas</p>
+								</a>
+								<a href="/Build" target="_self" class="l-twelve ddmBlock">
+									<p class="l-twelve t-base f-bold t-left">Develop</p>
+									<p class="l-twelve f-size14 f-l-height18 t-left">Indicators, algos &amp; trading apps</p>
+								</a>
+							</div>
+							<div class="l-four">
+								<a href="/Simulate" target="_self" class="l-twelve ddmBlock">
+									<p class="l-twelve t-base f-bold t-left">Simulate</p>
+									<p class="l-twelve f-size14 f-l-height18 t-left">Trade simulation &amp; backtest</p>
+								</a>
+								<a href="/Trade" target="_self" class="l-twelve ddmBlock">
+									<p class="l-twelve t-base f-bold t-left">Trade</p>
+									<p class="l-twelve f-size14 f-l-height18 t-left">What you want, how you want</p>
+								</a>
+							</div>
+							<div class="l-four l-nmr">
+								<a href="/Trading-Indicators" target="_self" class="l-twelve ddmBlock">
+									<p class="l-twelve t-base f-bold t-left">Personalize</p>
+									<p class="l-twelve f-size14 f-l-height18 t-left">1000s of 3rd party add-ons</p>
+								</a>
+								<a href="/Choice" target="_self" class="l-twelve ddmBlock">
+									<p class="l-twelve t-base f-bold t-left">Choice</p>
+									<p class="l-twelve f-size14 f-l-height18 t-left">Wide selection of brokers</p>
+								</a>
+							</div>
+						</div>
+
+						<a href="/BuyPlatform" target="_self" class="ddmBlock l-twelve l-mt1-5">
+							<p class="l-twelve t-base f-bold t-center">Pricing</p>
+							<p class="l-twelve f-size14 f-l-height18">NinjaTrader is <span class="f-bold c-green">ALWAYS FREE</span> to use for advanced charting, backtesting &amp; trade simulation</p>
+						</a>
+					</div>
+				</li>
+
+				<li>
+					<span class="header">Help</span>
+					<div id="helpM" class="l-twelve DDM">
+						<a href="/Help" target="_self" class="ddmBlock l-twelve l-mb1-5">
+							<p class="l-twelve t-base f-bold t-center">Contact Support</p>
+						</a>
+						<div class="l-twelve bdrTLGray l-pt3 sl_swap" id="sf2">
+							<div class="l-four">
+								<p class="l-twelve l-nmb l-plr1 l-pth t-base f-bold t-center">Platform</p>
+								<a href="/Help-Connection-Guides" target="_self" class="ddmBlockInline l-twelve">
+									<p class="l-twelve f-size14 t-center">Help Guides</p>
+								</a>
+								<a href="https://ninjatrader.com/support/forum/index.php" target="_self" class="ddmBlockInline l-twelve" rel="noopener">
+									<p class="l-twelve f-size14 t-center">Support Forum</p>
+								</a>
+								<a href="/PlatformDirect" target="_self" class="ddmBlockInline l-twelve">
+									<p class="l-twelve f-size14 t-center">Existing User Download</p>
+								</a>
+							</div>
+							<div class="l-four">
+								<p class="l-twelve l-nmb l-plr1 l-pth t-base f-bold t-center">Training</p>
+								<a href="/Video-Guides" target="_self" class="ddmBlockInline l-twelve">
+									<p class="l-twelve f-size14 t-center">Video Guides</p>
+								</a>
+								<a href="/events/" target="_self" class="ddmBlockInline l-twelve">
+									<p class="l-twelve f-size14 t-center">Livestreams</p>
+								</a>
+								<a href="/blog/" target="_self" class="ddmBlockInline l-twelve" rel="noopener">
+									<p class="l-twelve f-size14 t-center">Blog</p>
+								</a>
+							</div>
+							<div class="l-four l-nmr">
+								<p class="l-twelve l-nmb l-plr1 l-pth t-base f-bold t-center">Brokerage</p>
+								<a href="/ContactUs#TradeDesk" target="_self" class="ddmBlockInline l-twelve">
+									<p class="l-twelve f-size14 t-center">Emergency Trade Desk</p>
+								</a>
+								<a href="/AccountManagement" target="_self" class="ddmBlockInline l-twelve">
+									<p class="l-twelve f-size14 t-center">Account Management</p>
+								</a>
+								<a href="https://ninjatrader.com/blog/trade-desk-calendar/" target="_self" class="ddmBlockInline l-twelve" rel="noopener">
+									<p class="l-twelve f-size14 t-center">Trade Desk Calendar</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="mobile_nav" class="l-row b-black">
+		<div class="l-block l-np">
+			<ul id="mobile_nav_menu">
+				<li id="mobile_nav_menu_trigger">
+					<a href class="trg"></a>
+					<div id="mobileM" class="l-twelve DDM is-invisible">
+						<a href="#" class="ddmBlock toggleSM">Brokerage</a>
+						<div class="toggleSMC is-invisible">
+							<a href="/Futures" target="_self" class="ddmBlock">Trade Futures</a>
+							<a href="/Micro-Emini-Futures" target="_self" class="ddmBlock">Micro E-minis</a>
+							<a href="/Micro-Crude-Oil-Futures" target="_self" class="ddmBlock">Micro Crude Oil</a>
+							<a href="/Nano-Bitcoin-Futures.php" target="_self" class="ddmBlock">Nano Bitcoin</a>
+						</div>
+						<a href="#" class="ddmBlock toggleSM">Platform</a>
+						<div class="toggleSMC is-invisible">
+							<a href="/BuyPlatform" target="_self" class="ddmBlock">Pricing</a>
+							<a href="/Analyze" target="_self" class="ddmBlock">Chart</a>
+							<a href="/Simulate" target="_self" class="ddmBlock">Simulate</a>
+							<a href="/Trading-Indicators" target="_self" class="ddmBlock">Personalize</a>
+							<a href="/Build" target="_self" class="ddmBlock">Develop</a>
+							<a href="/Trade" target="_self" class="ddmBlock">Trade</a>
+							<a href="/Choice" target="_self" class="ddmBlock">Choice</a>
+						</div>
+						<a href="#" class="ddmBlock toggleSM">Help</a>
+						<div class="toggleSMC is-invisible">
+							<a href="/Help" target="_self" class="tl">Contact Support</a>
+							<p>Platform</p>
+							<a href="/Help-Connection-Guides" target="_self" class="ddmBlock ind">Help Guides</a>
+							<a href="/support/forum/index.php" target="_self" class="ddmBlock ind">Support Forum</a>
+							<a href="/PlatformDirect" target="_self" class="ddmBlock ind">Existing User Downloads</a>
+							<p class="l-mt1">Training</p>
+							<a href="/events/" target="_self" class="ddmBlock ind">Livestreams</a>
+							<a href="/Video-Guides" target="_self" class="ddmBlock ind">Video Guides</a>
+							<a href="/blog/" target="_self" class="ddmBlock ind" rel="noopener">Blog</a>
+							<p class="l-mt1">Brokerage</p>
+							<a href="/ContactUs#TradeDesk" target="_self" class="ddmBlock ind">Emergency Trade Desk</a>
+							<a href="/AccountManagement" target="_self" class="ddmBlock ind">Account Management</a>
+							<a href="/blog/trade-desk-calendar/" target="_self" class="ddmBlock ind">Trade Desk Calendar</a>
+						</div>
+						<a href="//getstarted.ninjatrader.com" target="_self" class="ddmBlock">Open Account</a>
+						<a href="https://account.ninjatrader.com/" target="_self" class="ddmBlock">Log In</a>
+						<a href="/ContactUs" target="_self" class="ddmBlock">Contact</a>
+						<a href="/" target="_self" class="ddmBlock toggleSM">English</a>
+						<div id="languageM-M" class="toggleSMC is-invisible sl_opaque">
+							<a href="/img/DualRig_Analyze.jpg " target="_self" class="ddmBlock">English</a>
+							<a href="/de/img/DualRig_Analyze.jpg" target="_self" class="ddmBlock">Deutsch</a>
+							<a href="/es/img/DualRig_Analyze.jpg" target="_self" class="ddmBlock">Espa&ntilde;ol</a>
+							<a href="/fr/img/DualRig_Analyze.jpg" target="_self" class="ddmBlock">French</a>
+							<a href="/it/img/DualRig_Analyze.jpg" target="_self" class="ddmBlock">Italiano</a>
+              				<a href="/pt/img/DualRig_Analyze.jpg" target="_self" class="ddmBlock">Portugu&ecirc;s</a>
+							<a href="/ru/img/DualRig_Analyze.jpg" target="_self" class="ddmBlock">Русский</a>
+						</div>
+					</div>
+				</li>
+				<li id="logo"><a href="/">NinjaTrader</a></li>
+			</ul>
+		</div>
+	</div>
+</header>        <div class="l-row content">
+            <div class="l-block"> 
+                <div class="l-seven">
+                    <h1 class="l-twelve l-mb1 t-left">Page Not Found</h1>
+                    <p class="t-left f-size24 f-l-height32 l-mb1">This page may not be available in your selected language. Please use the <span class="f-bold">language selector</span> in the upper left hand corner &amp; select &quot;English&quot; to access the page.</p>
+                    <p class="t-left f-size24 f-l-height32 l-mb1">Additionally, you can use the site menu or choose from the links below to enter the site.</p>
+                    <ul class="l-gTri">
+                        <li><a href="https://ninjatrader.com/GetStarted" target="_self" class="c-blue">Get Started with UNLIMITED FREE USE!</a></li>
+                        <li><a href="https://ninjatrader.com/BuyPlatform" target="_self" class="c-blue">Ready for Live Trading?</a></li>
+                        <li><a href="https://ninjatrader.com/Futures" target="_self" class="c-blue">Trade Futures for Less</a></li>
+                        <li><a href="https://ninjatrader.com/Help" target="_self" class="c-blue">Have Questions? Contact Support</a></li>
+                    </ul>
+                    
+                </div>
+                <div class="l-five l-nmr">
+                    <img src="Single_Angled-1.png" alt class="inline">
+                </div>
+                
+            </div>
+        </div>
+        <footer>
+	<div class="l-row">
+		<div class="l-block">
+			<div class="l-three">
+				<ul class="l-eleven l-pr1 l-stacked">
+					<li><a href="/blog/" target="_self" class="header">NEWS &amp; BLOG</a></li>
+					<div id="posts" class="l-twelve"></div>
+					<li><a href="/blog/trade-desk-calendar/" target="_self">Trade Desk Calendar</a></li>
+				</ul>
+			</div>
+			<div class="l-three">
+				<ul class="l-stacked">
+			    	<li><a href="/GetStarted" target="_self" class="header">TRADING PLATFORM</a></li>
+			    	<li><a href="/Analyze" target="_self">Charting Software</a></li>
+			    	<li><a href="/Trading-Indicators" target="_self">Trading Indicators</a></li>
+			    	<li><a href="/Simulate" target="_self">Simulate</a></li>
+			    	<li><a href="/Trade" target="_self">Trade</a></li>
+			    	<li><a href="/BuyPlatform" target="_self">Buy Trading Platform</a></li>
+			    	<li><a href="/LicenseComparison" target="_self">License Comparison</a></li>
+			    	<li><a href="/PlatformDirect" target="_self">Existing User Download</a></li>
+			    	<li><a href="/FreeLiveData" target="_self">Free Live Data</a></li>
+		    	</ul>
+			</div>
+			<div class="l-three">
+				<ul class="l-stacked">
+			    	<li><a href="/Futures" target="_self" class="header">BROKERAGE</a></li>
+			    	<li><a href="/Micro-Emini-Futures" target="_self">Micro E-mini Futures</a></li>
+			    	<li><a href="/Micro-Bitcoin-Futures" target="_self">Micro Bitcoin Futures</a></li>
+			    	<li><a href="/Micro-Crude-Oil-Futures" target="_self">Micro Crude Oil Futures</a></li>
+			    	<li><a href="/Nano-Bitcoin-Futures" target="_self">Nano Bitcoin Futures</a></li>
+		    	</ul>
+		    	<ul class="l-stacked">
+			    	<li><a href="/OpenAccount" target="_self" class="header">OPEN ACCOUNT</a></li>
+			    	<li><a href="/Futures" target="_self">Futures Broker</a></li>
+			    	<li><a href="/Margins-Position-Management" target="_self">Margins</a></li>
+			    </ul>
+			</div>
+			<div class="l-three l-nmr">
+				<ul class="l-stacked">
+					<li><a href="/Help" target="_self" class="header">HELP</a></li>
+					<li><a href="/Help" target="_self">Contact Support</a></li>
+					<li><a href="/blog/futures-basics-understanding-futures-trading/" target="_self">Futures Basics</a></li>
+					<li><a href="http://www.ninjatrader.com/support/forum/index.php" target="_blank" rel="noopener">Support Forum</a></li>
+					<li><a href="/FAQ" target="_self">FAQs</a></li>
+				</ul>
+				<ul class="l-stacked">
+					<li><a href="/AboutUs" target="_self" class="header">ABOUT US</a></li>
+					<li><a href="/ContactUs" target="_self">Contact Us</a></li>
+					<li><a href="https://ninjatrader.bamboohr.com/jobs/" target="_blank" rel="noopener">Careers</a></li>
+				</ul>
+			</div>
+			
+			<div class="l-twelve l-mb1">
+				<p class="l-eight l-nmb t-left">
+			    	<a href="/Privacy" target="_self" class="iconBT">Privacy Policy</a> |
+			    	<a href="/EUPrivacy" target="_self" class="iconBT">GDPR</a> |
+			    	<a href="/Advisory" target="_self" class="iconBT">Advisories</a> |
+			    	<a href="/Sitemap" target="_self" class="iconBT">Site Map</a>
+			  	</p>
+				<p class="l-three l-right l-nmb l-nmr t-left sl_swap" id="ft_1">
+					<a href="https://twitter.com/NinjaTrader" class="fIconB twitter" target="_blank" rel="noopener">Twitter</a>
+					<a href="https://www.facebook.com/NinjaTraderGroup/" class="fIconB facebook" target="_blank" rel="noopener">Facebook</a>
+					<a href="https://www.youtube.com/user/NinjaTraderLLC" class="fIconB youtube eco" target="_blank" rel="noopener">YouTube</a>
+					<a href="https://www.linkedin.com/company/ninjatrader-group-llc" class="fIconB linked" target="_blank" rel="noopener">LinkedIn</a>
+					<a href="https://www.instagram.com/ninjatrader/?hl=en" class="fIconB insta" target="_blank" rel="noopener">Instagram</a>
+				</p>
+			</div>
+		  
+			<p class="l-twelve l-mb1">Copyright <sup>&copy;</sup> 2023. All rights reserved. NinjaTrader and the NinjaTrader logo. Reg. U.S. Pat. &amp; Tm. Off.</p>
+			<p class="l-twelve l-mb1">Learn more about <a href="/NinjaTrader-Group-Affiliates" target="_self" class="t-base" style="color:#FFFFFF!important;font-weight:normal!important;">NinjaTrader Group, LLC Affiliates</a>. View <a href="/Customer-Funds" target="_self" class="t-base" style="color:#FFFFFF!important;font-weight:normal!important;">NinjaTrader Clearing, LLC FCM Disclosures</a>.</p>
+			
+			<p class="l-twelve l-mb1">Futures, foreign currency and options trading contains substantial risk and is not for every investor. An investor could potentially lose all or more than the initial investment. Risk capital is money that can be lost without jeopardizing one&rsquo;s financial security or lifestyle. Only risk capital should be used for trading and only those with sufficient risk capital should consider trading. Past performance is not necessarily indicative of future results. <a href="/Risk.php" class="t-base" style="color:#fff!important;font-weight:bold!important;">View Full Risk Disclosure</a>.</p>
+			<p class="l-twelve l-mb1">The trading of virtual currencies and Bitcoin futures carries additional risk. Prior to trading virtual currencies, please view <a href="https://ninjatrader.com/NFA-investor-advisory" target="_blank" rel="noopener" style="color:#fff!important;font-weight:bold!important;">NFA</a> &amp; <a href="https://ninjatrader.com/Downloads/CFTC-virtual-currency-advisory.pdf" target="_blank" rel="noopener" style="color:#fff!important;font-weight:bold!important;">CFTC</a> advisories providing more information on these potentially significant risks</p>
+		</div>
+	</div>
+</footer>
+        <script src="../js/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="../js/plugins.js"></script>
+        <script src="../js/main.js"></script>
+
+        <script>
+            downloadButton();
+            stickyFooter('.content');
+        </script>
+    </body>
+</html>

@@ -1,0 +1,98 @@
+{
+  "polyfillFiles": [
+    "static/chunks/polyfills-c67a75d1b6f99dc8.js"
+  ],
+  "devFiles": [],
+  "ampDevFiles": [],
+  "lowPriorityFiles": [
+    "static/KVng1OdVmuvleUTDetqCq/_buildManifest.js",
+    "static/KVng1OdVmuvleUTDetqCq/_ssgManifest.js"
+  ],
+  "rootMainFiles": [],
+  "pages": {
+    "/": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-74c4d6b2b5c362f3.js",
+      "static/chunks/247-0258f10d1efb7344.js",
+      "static/chunks/434-3227e5168626d4d1.js",
+      "static/chunks/pages/index-032d6c6cf62e54df.js"
+    ],
+    "/_app": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-74c4d6b2b5c362f3.js",
+      "static/css/fb0c9db34a530531.css",
+      "static/chunks/pages/_app-cff197596e2d3fb7.js"
+    ],
+    "/_error": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-74c4d6b2b5c362f3.js",
+      "static/chunks/pages/_error-8353112a01355ec2.js"
+    ],
+    "/aaaa": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-74c4d6b2b5c362f3.js",
+      "static/chunks/pages/aaaa-b7dfc65ed1367413.js"
+    ],
+    "/automatic": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-74c4d6b2b5c362f3.js",
+      "static/chunks/247-0258f10d1efb7344.js",
+      "static/chunks/434-3227e5168626d4d1.js",
+      "static/chunks/pages/automatic-b5252e38a643c394.js"
+    ],
+    "/book": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-74c4d6b2b5c362f3.js",
+      "static/chunks/247-0258f10d1efb7344.js",
+      "static/chunks/434-3227e5168626d4d1.js",
+      "static/chunks/pages/book-e0d8999a39dc0b3c.js"
+    ],
+    "/graphics": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-74c4d6b2b5c362f3.js",
+      "static/chunks/247-0258f10d1efb7344.js",
+      "static/chunks/434-3227e5168626d4d1.js",
+      "static/chunks/pages/graphics-c21647188e64506c.js"
+    ],
+    "/learning-trade": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-74c4d6b2b5c362f3.js",
+      "static/chunks/247-0258f10d1efb7344.js",
+      "static/chunks/434-3227e5168626d4d1.js",
+      "static/chunks/pages/learning-trade-f670655feb5c6ed3.js"
+    ],
+    "/limited-stonks": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-74c4d6b2b5c362f3.js",
+      "static/chunks/247-0258f10d1efb7344.js",
+      "static/chunks/434-3227e5168626d4d1.js",
+      "static/chunks/pages/limited-stonks-9b2133bd281ada69.js"
+    ],
+    "/strategy-and-risks": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-74c4d6b2b5c362f3.js",
+      "static/chunks/247-0258f10d1efb7344.js",
+      "static/chunks/434-3227e5168626d4d1.js",
+      "static/chunks/pages/strategy-and-risks-5fef3ea953b74f10.js"
+    ],
+    "/vip-stonks": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-74c4d6b2b5c362f3.js",
+      "static/chunks/247-0258f10d1efb7344.js",
+      "static/chunks/434-3227e5168626d4d1.js",
+      "static/chunks/pages/vip-stonks-472c83ec2402a254.js"
+    ]
+  },
+  "ampFirstPages": []
+}
