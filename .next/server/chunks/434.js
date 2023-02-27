@@ -225,7 +225,7 @@ const Header = ()=>{
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
                                                         className: "l-four",
                                                         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
-                                                            href: "/Build",
+                                                            href: "/learning-trade",
                                                             target: "_self",
                                                             className: "l-twelve ddmBlock",
                                                             children: [

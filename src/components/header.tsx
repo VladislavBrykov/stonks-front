@@ -72,7 +72,7 @@ export const Header = ()=>{
 
                                         </div>
                                         <div className="l-four">
-                                            <Link href="/Build" target="_self" className="l-twelve ddmBlock">
+                                            <Link href="/learning-trade" target="_self" className="l-twelve ddmBlock">
                                                 <p className="l-twelve t-base f-bold t-left">Сигналы</p>
                                                 <p className="l-twelve f-size14 f-l-height18 t-left">Как пользоваться торговлей по сигналам</p>
                                             </Link>
