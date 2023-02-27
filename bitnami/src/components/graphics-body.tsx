@@ -32,8 +32,8 @@ export const GraphicsBody = ()=>{
                         <h3 className="big c-green">АНАЛИЗИРУЙТЕ</h3>
                         <p>поток ордеров</p>
                         <p>Используйте анализ глубины рынка, потока ордеров, бары Volumetric для определения и
-                            подтверждения рыночного направления. (Доступно только наших покупателей) <a href="/vip-stonks" target="_self"
-                                                                    className="d-block l-mt1 c-green f-size20 f-l-height24">Оформить подписку</a>
+                            подтверждения рыночного направления. (Доступно только наших покупателей) <Link href="/vip-stonks" target="_self"
+                                                                    className="d-block l-mt1 c-green f-size20 f-l-height24">Оформить подписку</Link>
                         </p>
                     </div>
                     <div className="l-twelve t-center">
@@ -66,8 +66,8 @@ export const GraphicsBody = ()=>{
                     <p className="l-six l-clear t-left">
                         <strong className="d-block">Развитая система оповещений.</strong> Используйте возможности
                         настраиваемых оповещений и распространения информации в соцсетях, и делайте рыночные ордеры на
-                        основе технического анализа. <a data-href="https://t.me/general_stonks" href="https://t.me/general_stonks"
-                                                        className="d-block l-mt1 vidpop t-left c-green f-size20 f-l-height24 t-left">Пример, как это происходит</a>
+                        основе технического анализа. <Link data-href="https://t.me/general_stonks" href="https://t.me/general_stonks"
+                                                        className="d-block l-mt1 vidpop t-left c-green f-size20 f-l-height24 t-left">Пример, как это происходит</Link>
                     </p>
                 </div>
             </div>
@@ -168,7 +168,7 @@ export const GraphicsBody = ()=>{
                         </p>
                     </div>
                     <div className="l-twelve t-center">
-                        <a href="https://t.me/general_stonks" className="redFlat translate f-size32 f-l-height32">НАЧНИТЕ РАБОТУ</a>
+                        <Link href="https://t.me/general_stonks" className="redFlat translate f-size32 f-l-height32">НАЧНИТЕ РАБОТУ</Link>
                     </div>
                 </div>
             </div>

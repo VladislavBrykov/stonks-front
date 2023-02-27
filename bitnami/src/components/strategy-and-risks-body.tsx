@@ -20,8 +20,8 @@ export const StrategyAndRisksBody = ()=>{
                             для инвестирования с высоким риском и высокой прибылью. Важно, чтобы его потеря не причинила
                             существенного вреда для инвестора.</p>
                         <p className="t-left l-nmb">
-                            <a href="https://t.me/general_stonks" target="_self"
-                               className="redFlat l-left f-size32">Начать торговать</a>
+                            <Link href="https://t.me/general_stonks" target="_self"
+                               className="redFlat l-left f-size32">Начать торговать</Link>
                         </p>
                     </div>
                     <div className="l-four l-nmr">
@@ -90,9 +90,10 @@ export const StrategyAndRisksBody = ()=>{
                             торговли! Анализ известных и уникальных паттернов.</p>
                     </div>
                     <div className="l-four l-nmr">
-                        <p className="l-twelve l-mt1 l-nmb t-center"><a
+                        <p className="l-twelve l-mt1 l-nmb t-center">
+                            <Link
                             href="/book"
-                            className="blueOpen View_FC">ПОДРОБНЕЕ</a></p>
+                            className="blueOpen View_FC">ПОДРОБНЕЕ</Link></p>
                     </div>
                 </div>
             </div>
@@ -181,11 +182,11 @@ export const StrategyAndRisksBody = ()=>{
                 <div className="l-block">
                     <div className="l-six">
                         <h2 className="l-twelve l-mb1 t-left">Сообщите, чем мы можем вам помочь</h2>
-                        <p className="l-twelve l-mb1 t-left">Напишите менеджеру в телеграм <a
-                            href="https://t.me/VladislavBrk" className="c-blue">Stonks</a> для того, чтобы обсудить,
+                        <p className="l-twelve l-mb1 t-left">Напишите менеджеру в телеграм <Link
+                            href="https://t.me/VladislavBrk" className="c-blue">Stonks</Link> для того, чтобы обсудить,
                             какие технологические решения StonksPro подходят именно вам.</p>
-                        <p className="l-twelve t-left"><a href="https://t.me/VladislavBrk" className="redOpen f-size24">СВЯЖИТЕСЬ
-                            С МЕНЕДЖЕРОМ</a></p>
+                        <p className="l-twelve t-left"><Link href="https://t.me/VladislavBrk" className="redOpen f-size24">СВЯЖИТЕСЬ
+                            С МЕНЕДЖЕРОМ</Link></p>
                     </div>
                     <div className="l-six l-nmr t-right">
                         <picture>

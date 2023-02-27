@@ -38,37 +38,37 @@ export const Main = ()=>{
                     <div className="l-three t-center icon clickable">
                         <div id="product" className="iconCont"></div>
                         <p className="l-nm l-mt1 m-center">
-                            <a className="t-base d-block">
+                            <Link href='#' className="t-base d-block">
                                 <strong className="d-block l-mb1">Услуги для всех трейдеров</strong>
                                 Ослеживание самых популярных в мире паттернов
-                            </a>
+                            </Link>
                         </p>
                     </div>
                     <div className="l-three t-center icon clickable">
                         <div id="award" className="iconCont"></div>
                         <p className="l-nm l-mt1 m-center">
-                            <a className="t-base d-block" target="_self">
+                            <Link href='#' className="t-base d-block" target="_self">
                                 <strong className="d-block l-mb1">Много довольных клиентов</strong>
                                 Мы помогли многим трейдерам. Кто-то даже сумел заработать целое состояние.
-                            </a>
+                            </Link>
                         </p>
                     </div>
                     <div className="l-three t-center icon clickable">
                         <div id="savings" className="iconCont"></div>
                         <p className="l-nm l-mt1 m-center">
-                            <a className="t-base d-block">
+                            <Link href='#' className="t-base d-block">
                                 <strong className="d-block l-mb1">Колосальная экономия времени</strong>
                                 Вам уже не нужно часами мониторить графики. Программа сделает это за вас.
-                            </a>
+                            </Link>
                         </p>
                     </div>
                     <div className="l-three t-center icon clickable l-nmr">
                         <div id="support" className="iconCont"></div>
                         <p className="l-nm l-mt1 m-center">
-                            <a className="t-base d-block" target="_self">
+                            <Link href='#' className="t-base d-block" target="_self">
                                 <strong className="d-block l-mb1">Закрытое сообщество</strong>
                                 Открытые комментарии к прогнозам. Советы и консультации.
-                            </a>
+                            </Link>
                         </p>
                     </div>
                 </div>
@@ -168,8 +168,8 @@ export const Main = ()=>{
                         <h2 className="t-left c-white">Стратегии <span className="d-block">и риски</span></h2>
                         <p className="l-ten t-left c-white">Хотите узнать о преимуществах, недостатках, стратегиях и
                             рисках фьючерсной торговли?</p>
-                        <a href="/strategy-and-risks"
-                           className="whiteOpen bHover l-left eco">узнать больше</a>
+                        <Link href="/strategy-and-risks"
+                           className="whiteOpen bHover l-left eco">узнать больше</Link>
                     </div>
                     <div className="l-six l-right" id="indexEcoSecond">
                         <h2 className="t-right c-white">Обучение <span className="d-block">для новичков</span></h2>
@@ -188,8 +188,8 @@ export const Main = ()=>{
                         <h3>Торговля в плюс</h3>
                         <p className="t-center">Выберите, какие паттерны хотите остеживать. Полчайте уведомления когда
                             входить в сделку.</p>
-                        <p className="t-center l-nm"><a href="/vip-stonks"
-                                                        target="_blank" className="redOpen">ПАТТЕРНЫ</a></p>
+                        <p className="t-center l-nm"><Link href="/vip-stonks"
+                                                        target="_blank" className="redOpen">ПАТТЕРНЫ</Link></p>
                     </div>
                     <div></div>
                     <div></div>

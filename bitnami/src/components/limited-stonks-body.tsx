@@ -68,10 +68,10 @@ export const LimitedStonksBody = ()=>{
                         Тысячи людей торгуют по нашим прогнозам! Сотни заработали состояние на автоматизированной
                         торговле.
                     </p>
-                    <a
+                    <Link
                         href="/automatic"
                         className="l-three l-nm t-center c-white eco"
-                    >Автоматизированная</a
+                    >Автоматизированная</Link
                     >
                 </div>
             </div>
@@ -104,8 +104,8 @@ export const LimitedStonksBody = ()=>{
                         <p className="l-eleven t-left l-mb1"></p>
 
                         <p className="t-left l-nmb">
-                            <a href="https://t.me/VladislavBrk" target="_self" className="redFlat l-left f-size32">Купить
-                                за 30$ /мес</a>
+                            <Link href="https://t.me/VladislavBrk" target="_self" className="redFlat l-left f-size32">Купить
+                                за 30$ /мес</Link>
                         </p>
                         <p className="l-eleven t-left l-mb1"></p>
 

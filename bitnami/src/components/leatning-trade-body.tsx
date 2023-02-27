@@ -33,8 +33,8 @@ export const LeatningTradeBody = ()=>{
                         <p className="t-left l-mb2 t-base">*Макситмальный профит через Binance Futures</p>
                         <h3 className="t-left l-mb1 f-size48 f-l-height50">Как хотите</h3>
                         <p className="t-left l-mb1 f-size20 f-l-height26">Хотите торговать своими руками, используйте наши сигналы и прогнозы. Хотите без риска зарабатывать ежедневно от 7% до 60%, используйте автоматизированную торговлю</p>
-                        <a data-href="/automatic" href="/automatic"
-                           className="vidpop t-left c-green f-size20 f-l-height24">Посмотреть, как это происходит</a>
+                        <Link data-href="/automatic" href="/automatic"
+                           className="vidpop t-left c-green f-size20 f-l-height24">Посмотреть, как это происходит</Link>
                     </div>
                 </div>
                 <div className="l-block l-mt1 l-mb2 l-npb ATM">

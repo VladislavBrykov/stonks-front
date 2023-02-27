@@ -69,10 +69,10 @@ export const VipStonksBody = ()=>{
                         Тысячи людей торгуют по нашим прогнозам! Сотни заработали состояние на автоматизированной
                         торговле.
                     </p>
-                    <a
+                    <Link
                         href="/automatic"
                         className="l-three l-nm t-center c-white eco"
-                    >Автоматизированная</a
+                    >Автоматизированная</Link
                     >
                 </div>
             </div>
@@ -111,8 +111,8 @@ export const VipStonksBody = ()=>{
                         <p className="l-eleven t-left l-mb1"></p>
 
                         <p className="t-left l-nmb">
-                            <a href="https://t.me/VladislavBrk" target="_self" className="redFlat l-left f-size32">Купить
-                                за 50$ /мес</a>
+                            <Link href="https://t.me/VladislavBrk" target="_self" className="redFlat l-left f-size32">Купить
+                                за 50$ /мес</Link>
                         </p>
                         <p className="l-eleven t-left l-mb1"></p>
 

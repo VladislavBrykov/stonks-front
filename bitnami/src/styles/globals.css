@@ -7675,7 +7675,7 @@ ul.f-nav#main_nav li:hover .DDM {
     text-indent: -119988px;
     overflow: hidden;
     text-align: left;
-    background: url(../images/NTLogo.png) 10px center no-repeat;
+    background: url(../images/stonks_2.png) 10px center no-repeat;
     background-size: 90% auto;
     height: 100%;
   }
@@ -7884,7 +7884,7 @@ ul.f-nav#main_nav li:hover .DDM {
     text-indent: -119988px;
     overflow: hidden;
     text-align: left;
-    background: url(../images/NTLogo.png) 37% center no-repeat;
+    background: url(../images/stonks_2.png) 37% center no-repeat;
     background-size: auto 100%;
   }
   #mobile_nav ul#mobile_nav_menu li#logo a {
@@ -10085,14 +10085,14 @@ span.superscript:before {
 }
 @media (min-width: 300px) and (max-width: 600px) {
   #homeHero {
-    /*background-image: url("../images/Single_Interior_Right_XTraRight_Small%402x.jpg");*/
-    /*background-image: url("../images/Single_Interior_Right_XTraRight_Small%402x.webp");*/
+    background-image: url("/Single_Interior_Right_XTraRight_Small@2x.jpg");
+    background-image: url("/Single_Interior_Right_XTraRight_Small@2x.webp");
   }
 }
 @media (min-width: 601px) and (max-width: 1024px) {
   #homeHero {
-    /*background-image: url("../images/Single_Interior_Right_XTraRight_Medium%402x.jpg");*/
-    /*background-image: url("../images/Single_Interior_Right_XTraRight_Medium%402x.webp");*/
+    background-image: url("../images/Single_Interior_Right_XTraRight.jpg");
+    background-image: url("../images/Single_Interior_Right_XTraRight.webp");
   }
 }
 @media (min-width: 1025px) {
@@ -11096,7 +11096,7 @@ p.logo a#ntb {
   display: block;
   height: 64px;
   height: 4rem;
-  background: url("../images/NTBLogo.png") center 7px no-repeat;
+  background: url("../images/stonks_2.png") center 7px no-repeat;
   background-size: contain;
 }
 @media (min-width: 300px) and (max-width: 600px) {
@@ -11117,7 +11117,7 @@ p.logo a#kinetick {
   background-size: contain;
 }
 html.no-svg p.logo a#kinetick {
-  background-image: url("../images/KinetickLogo.png");
+  background-image: url("../images/stonks_2.png");
 }
 @media (min-width: 300px) and (max-width: 600px) {
   p.logo a#kinetick {
