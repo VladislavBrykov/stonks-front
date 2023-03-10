@@ -1,533 +1,684 @@
 <!DOCTYPE html><html>
-<head>
-    <meta name="robots" content="NOODP">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Futures Trading Software and Brokerage | NinjaTrader</title>
-    <meta name="description" content="NinjaTrader's trading software & futures brokerage platform equips traders with an award-winning trading platform & low commissions for futures trading.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preload" href="css/Application.css?v=1677265770" as="style">
-    <link rel="preload" href="js/vendor/jquery-2.2.4.min.js" as="script">
-    <link rel="preload" href="js/plugins-min.js" as="script">
-    <link rel="preload" href="js/main-min.js?v=1677265770" as="script">
-    <link rel="preload" href="js/NMDY-min.js?v=1677265770" as="script">
-    <link rel="stylesheet" href="css/Application.css">
-    <style type="text/css">
-      .bdrGreen{
-      -webkit-transition:all 250ms ease-in;transition:all 250ms ease-in;
-      }
-      .bdrGreen:hover {
-      box-shadow:0px 2px 7px 0px rgba(0, 0, 0, 0.5);
-      }
-    </style>
-    <link rel="alternate" hreflang="x-default" href="https://ninjatrader.com/" class="sl_norewrite">
-		<link rel="alternate" hreflang="de" href="https://ninjatrader.com/de/" class="sl_norewrite">
-		<link rel="alternate" hreflang="en" href="https://ninjatrader.com/" class="sl_norewrite">
-		<link rel="alternate" hreflang="es" href="https://ninjatrader.com/es/" class="sl_norewrite">
-		<link rel="alternate" hreflang="fr" href="https://ninjatrader.com/fr/" class="sl_norewrite">
-		<link rel="alternate" hreflang="it" href="https://ninjatrader.com/it/" class="sl_norewrite">
-		<link rel="alternate" hreflang="pt" href="https://ninjatrader.com/pt/" class="sl_norewrite">
-		<link rel="alternate" hreflang="ru" href="https://ninjatrader.com/ru/" class="sl_norewrite">
-		<link rel="canonical" href="https://ninjatrader.com/">
+<!--<head>-->
+<!--    <meta name="robots" content="NOODP">-->
+<!--    <meta charset="utf-8">-->
+<!--    <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+<!--    <title>Futures Trading Software and Brokerage | NinjaTrader</title>-->
+<!--    <meta name="description" content="NinjaTrader's trading software & futures brokerage platform equips traders with an award-winning trading platform & low commissions for futures trading.">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--    <link rel="preload" href="css/Application.css?v=1677265770" as="style">-->
+<!--    <link rel="preload" href="js/vendor/jquery-2.2.4.min.js" as="script">-->
+<!--    <link rel="preload" href="js/plugins-min.js" as="script">-->
+<!--    <link rel="preload" href="js/main-min.js?v=1677265770" as="script">-->
+<!--    <link rel="preload" href="js/NMDY-min.js?v=1677265770" as="script">-->
+<!--    <link rel="stylesheet" href="css/Application.css">-->
+<!--    <style type="text/css">-->
+<!--      .bdrGreen{-->
+<!--      -webkit-transition:all 250ms ease-in;transition:all 250ms ease-in;-->
+<!--      }-->
+<!--      .bdrGreen:hover {-->
+<!--      box-shadow:0px 2px 7px 0px rgba(0, 0, 0, 0.5);-->
+<!--      }-->
+<!--    </style>-->
+<!--    <link rel="alternate" hreflang="x-default" href="https://ninjatrader.com/" class="sl_norewrite">-->
+<!--		<link rel="alternate" hreflang="de" href="https://ninjatrader.com/de/" class="sl_norewrite">-->
+<!--		<link rel="alternate" hreflang="en" href="https://ninjatrader.com/" class="sl_norewrite">-->
+<!--		<link rel="alternate" hreflang="es" href="https://ninjatrader.com/es/" class="sl_norewrite">-->
+<!--		<link rel="alternate" hreflang="fr" href="https://ninjatrader.com/fr/" class="sl_norewrite">-->
+<!--		<link rel="alternate" hreflang="it" href="https://ninjatrader.com/it/" class="sl_norewrite">-->
+<!--		<link rel="alternate" hreflang="pt" href="https://ninjatrader.com/pt/" class="sl_norewrite">-->
+<!--		<link rel="alternate" hreflang="ru" href="https://ninjatrader.com/ru/" class="sl_norewrite">-->
+<!--		<link rel="canonical" href="https://ninjatrader.com/">-->
 
 		
         <!-- End Google Tag Manager -->
 
 		<!-- Preconnect to all web service endpoints -->
-		<link rel="preconnect" href="https://www.googletagmanager.com/gtm.js?id=GTM-TG6NSPR">
-		<link rel="preconnect" href="https://www.google-analytics.com/">
-		<link rel="preconnect" href="https://pixel.sitescout.com">
-		<link rel="preconnect" href="https://www.googleadservices.com">
-		<link rel="preconnect" href="https://cdn.neverbounce.com">
-		<link rel="preconnect" href="https://static.olark.com">
-		<link rel="preconnect" href="https://connect.facebook.net">
+<!--		<link rel="preconnect" href="https://www.googletagmanager.com/gtm.js?id=GTM-TG6NSPR">-->
+<!--		<link rel="preconnect" href="https://www.google-analytics.com/">-->
+<!--		<link rel="preconnect" href="https://pixel.sitescout.com">-->
+<!--		<link rel="preconnect" href="https://www.googleadservices.com">-->
+<!--		<link rel="preconnect" href="https://cdn.neverbounce.com">-->
+<!--		<link rel="preconnect" href="https://static.olark.com">-->
+<!--		<link rel="preconnect" href="https://connect.facebook.net">-->
 
-		<link rel="preload" href="/css/fonts/2C944B_0_0.woff" as="font" type="font/woff" crossorigin>
-		<link rel="preload" href="/css/fonts/2C944B_0_0.woff2" as="font" type="font/woff2" crossorigin>
-		<link rel="preload" href="/css/fonts/2C944B_1_0.woff" as="font" type="font/woff" crossorigin>
-		<link rel="preload" href="/css/fonts/2C944B_1_0.woff2" as="font" type="font/woff2" crossorigin>
-		<link rel="preload" href="/css/fonts/2C944B_2_0.woff" as="font" type="font/woff" crossorigin>
-		<link rel="preload" href="/css/fonts/2C944B_2_0.woff2" as="font" type="font/woff2" crossorigin>
-		<link rel="preload" href="/css/fonts/2C944B_3_0.woff" as="font" type="font/woff" crossorigin>
-		<link rel="preload" href="/css/fonts/2C944B_3_0.woff2" as="font" type="font/woff2" crossorigin>
-		<link rel="preload" href="/css/fonts/2C944B_4_0.woff" as="font" type="font/woff" crossorigin>
-		<link rel="preload" href="/css/fonts/2C944B_4_0.woff2" as="font" type="font/woff2" crossorigin>
+<!--		<link rel="preload" href="/css/fonts/2C944B_0_0.woff" as="font" type="font/woff" crossorigin>-->
+<!--		<link rel="preload" href="/css/fonts/2C944B_0_0.woff2" as="font" type="font/woff2" crossorigin>-->
+<!--		<link rel="preload" href="/css/fonts/2C944B_1_0.woff" as="font" type="font/woff" crossorigin>-->
+<!--		<link rel="preload" href="/css/fonts/2C944B_1_0.woff2" as="font" type="font/woff2" crossorigin>-->
+<!--		<link rel="preload" href="/css/fonts/2C944B_2_0.woff" as="font" type="font/woff" crossorigin>-->
+<!--		<link rel="preload" href="/css/fonts/2C944B_2_0.woff2" as="font" type="font/woff2" crossorigin>-->
+<!--		<link rel="preload" href="/css/fonts/2C944B_3_0.woff" as="font" type="font/woff" crossorigin>-->
+<!--		<link rel="preload" href="/css/fonts/2C944B_3_0.woff2" as="font" type="font/woff2" crossorigin>-->
+<!--		<link rel="preload" href="/css/fonts/2C944B_4_0.woff" as="font" type="font/woff" crossorigin>-->
+<!--		<link rel="preload" href="/css/fonts/2C944B_4_0.woff2" as="font" type="font/woff2" crossorigin>-->
 
-		<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-TG6NSPR"></script>
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-TG6NSPR');</script>
-	<script>
-        document.addEventListener("DOMContentLoaded", function(){
-            var lang= Cookies.get('user_lang');
-            ada(lang);
-        });
-        function ada(lang) {
-            window.adaSettings = {
-                language: lang,
-                align: "left"
-            }
-        }
-    </script>
-    </script>
-  </head>
-  <body class="home">
-    <a href="https://t.me/general_stonks" target="_self" class="stickyCTA noOP" id="FreeDownload">БЕСПЛАТНО! Попробовать</a>    <!-- NinjaTrader Google Tag Manager (noscript) -->
+<!--		<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-TG6NSPR"></script>-->
+<!--	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':-->
+<!--        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],-->
+<!--        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=-->
+<!--        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);-->
+<!--        })(window,document,'script','dataLayer','GTM-TG6NSPR');</script>-->
+<!--	<script>-->
+<!--        document.addEventListener("DOMContentLoaded", function(){-->
+<!--            var lang= Cookies.get('user_lang');-->
+<!--            ada(lang);-->
+<!--        });-->
+<!--        function ada(lang) {-->
+<!--            window.adaSettings = {-->
+<!--                language: lang,-->
+<!--                align: "left"-->
+<!--            }-->
+<!--        }-->
+<!--    </script>-->
+<!--    </script>-->
+<!--  </head>-->
+<head>
+	<meta charset="utf-8">
+	<title>Telegram: Contact @general_stonks</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>try{if(window.parent!=null&&window!=window.parent){window.parent.postMessage(JSON.stringify({eventType:'web_app_open_tg_link',eventData:{path_full:"\/general_stonks"}}),'https://web.telegram.org');}}catch(e){}</script>
 
-<header>
-	<div id="top_nav" class="l-row b-black">
-		<div class="l-block l-np">
-			<ul id="black_bar" class="f-nav">
-				<li>
-					<a id="Contact">На рынке с 2020 года</a>
-				</li>
-				<li class="LogIn">
-                 <a href="https://account.ninjatrader.com/welcome" target="_blank" id="LogInL">Log In</a>
-             </li>
-				<li class="account"><a href="https://account.ninjatrader.com/register" target="_self">Open Account</a></li>
-			</ul>
+	<meta property="og:title" content="General Stonks">
+	<meta property="og:image" content="https://cdn4.telegram-cdn.org/file/XA8wm1juJmk-pvVpZ_VMYwy5Yi2gUbEfHSrKu7Iy_IO-yPD0v4eEI6Q1wwWzIdicXsYLTa5OPPHi_kRSVbvyLh0HYwghvcg-rSvkK9O7DDoI1GbYCYucswGBfs_XjhGJjpJ_tEeAjzktYOK_q5E-BXd_xY0Qor-nWONx4n1xz4U3wTfvJPpVhmp06FXtg7J7Ow9b1t5oV7ysQWxyyvQIBa4OB3ykKMu0NWsMC5smSiCkHCX3JrzHyze1oEC5Ypumg_Wt5md9JQSZlq10XWrKgk-7p-B5K7r6B7Mi4RF2Nn0kMgJRAJSOhDqFGOIcxNgTjnsBHNxPuBuTReug-5tCCw.jpg">
+	<meta property="og:site_name" content="Telegram">
+	<meta property="og:description" content="Бесплатные сигналы Features Crypto Binance">
+
+	<meta property="twitter:title" content="General Stonks">
+	<meta property="twitter:image" content="https://cdn4.telegram-cdn.org/file/XA8wm1juJmk-pvVpZ_VMYwy5Yi2gUbEfHSrKu7Iy_IO-yPD0v4eEI6Q1wwWzIdicXsYLTa5OPPHi_kRSVbvyLh0HYwghvcg-rSvkK9O7DDoI1GbYCYucswGBfs_XjhGJjpJ_tEeAjzktYOK_q5E-BXd_xY0Qor-nWONx4n1xz4U3wTfvJPpVhmp06FXtg7J7Ow9b1t5oV7ysQWxyyvQIBa4OB3ykKMu0NWsMC5smSiCkHCX3JrzHyze1oEC5Ypumg_Wt5md9JQSZlq10XWrKgk-7p-B5K7r6B7Mi4RF2Nn0kMgJRAJSOhDqFGOIcxNgTjnsBHNxPuBuTReug-5tCCw.jpg">
+	<meta property="twitter:site" content="@Telegram">
+
+	<meta property="al:ios:app_store_id" content="686449807">
+	<meta property="al:ios:app_name" content="Telegram Messenger">
+	<meta property="al:ios:url" content="tg://resolve?domain=general_stonks">
+
+	<meta property="al:android:url" content="tg://resolve?domain=general_stonks">
+	<meta property="al:android:app_name" content="Telegram">
+	<meta property="al:android:package" content="org.telegram.messenger">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@Telegram">
+	<meta name="twitter:description" content="Бесплатные сигналы Features Crypto Binance
+">
+	<meta name="twitter:app:name:iphone" content="Telegram Messenger">
+	<meta name="twitter:app:id:iphone" content="686449807">
+	<meta name="twitter:app:url:iphone" content="tg://resolve?domain=general_stonks">
+	<meta name="twitter:app:name:ipad" content="Telegram Messenger">
+	<meta name="twitter:app:id:ipad" content="686449807">
+	<meta name="twitter:app:url:ipad" content="tg://resolve?domain=general_stonks">
+	<meta name="twitter:app:name:googleplay" content="Telegram">
+	<meta name="twitter:app:id:googleplay" content="org.telegram.messenger">
+	<meta name="twitter:app:url:googleplay" content="https://t.me/general_stonks">
+
+	<meta name="apple-itunes-app" content="app-id=686449807, app-argument: tg://resolve?domain=general_stonks">
+	<script>window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches&&document.documentElement&&document.documentElement.classList&&document.documentElement.classList.add('theme_dark');</script>
+	<link rel="icon" type="image/svg+xml" href="//telegram.org/img/website_icon.svg?4">
+	<link rel="apple-touch-icon" sizes="180x180" href="//telegram.org/img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="//telegram.org/img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
+	<link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon">
+	<link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
+	<!--link href="/css/myriad.css" rel="stylesheet"-->
+	<link href="//telegram.org/css/bootstrap.min.css?3" rel="stylesheet">
+	<link href="//telegram.org/css/telegram.css?234" rel="stylesheet" media="screen">
+</head>
+<body class="">
+<div class="tgme_background_wrap">
+	<canvas id="tgme_background" class="tgme_background default" width="50" height="50" data-colors="dbddbb,6ba587,d5d88d,88b884"></canvas>
+	<div class="tgme_background_pattern default"></div>
+</div>
+<div class="tgme_page_wrap">
+	<div class="tgme_head_wrap">
+		<div class="tgme_head">
+			<a href="//telegram.org/" class="tgme_head_brand">
+				<svg class="tgme_logo" height="34" viewBox="0 0 133 34" width="133" xmlns="http://www.w3.org/2000/svg">
+					<g fill="none" fillRule="evenodd">
+						<circle cx="17" cy="17" fill="var(--accent-btn-color)" r="17"></circle><path d="m7.06510669 16.9258959c5.22739451-2.1065178 8.71314291-3.4952633 10.45724521-4.1662364 4.9797665-1.9157646 6.0145193-2.2485535 6.6889567-2.2595423.1483363-.0024169.480005.0315855.6948461.192827.1814076.1361492.23132.3200675.2552048.4491519.0238847.1290844.0536269.4231419.0299841.65291-.2698553 2.6225356-1.4375148 8.986738-2.0315537 11.9240228-.2513602 1.2428753-.7499132 1.5088847-1.2290685 1.5496672-1.0413153.0886298-1.8284257-.4857912-2.8369905-1.0972863-1.5782048-.9568691-2.5327083-1.3984317-4.0646293-2.3321592-1.7703998-1.0790837-.212559-1.583655.7963867-2.5529189.2640459-.2536609 4.7753906-4.3097041 4.755976-4.431706-.0070494-.0442984-.1409018-.481649-.2457499-.5678447-.104848-.0861957-.2595946-.0567202-.3712641-.033278-.1582881.0332286-2.6794907 1.5745492-7.5636077 4.6239616-.715635.4545193-1.3638349.6759763-1.9445998.6643712-.64024672-.0127938-1.87182452-.334829-2.78737602-.6100966-1.12296117-.3376271-1.53748501-.4966332-1.45976769-1.0700283.04048-.2986597.32581586-.610598.8560076-.935815z" fill="#fff"></path><path d="m49.4 24v-12.562h-4.224v-2.266h11.198v2.266h-4.268v12.562zm16.094-4.598h-7.172c.066 1.936 1.562 2.772 3.3 2.772 1.254 0 2.134-.198 2.97-.484l.396 1.848c-.924.396-2.2.682-3.74.682-3.476 0-5.522-2.134-5.522-5.412 0-2.97 1.804-5.764 5.236-5.764 3.476 0 4.62 2.86 4.62 5.214 0 .506-.044.902-.088 1.144zm-7.172-1.892h4.708c.022-.99-.418-2.618-2.222-2.618-1.672 0-2.376 1.518-2.486 2.618zm9.538 6.49v-15.62h2.706v15.62zm14.84-4.598h-7.172c.066 1.936 1.562 2.772 3.3 2.772 1.254 0 2.134-.198 2.97-.484l.396 1.848c-.924.396-2.2.682-3.74.682-3.476 0-5.522-2.134-5.522-5.412 0-2.97 1.804-5.764 5.236-5.764 3.476 0 4.62 2.86 4.62 5.214 0 .506-.044.902-.088 1.144zm-7.172-1.892h4.708c.022-.99-.418-2.618-2.222-2.618-1.672 0-2.376 1.518-2.486 2.618zm19.24-1.144v6.072c0 2.244-.462 3.85-1.584 4.862-1.1.99-2.662 1.298-4.136 1.298-1.364 0-2.816-.308-3.74-.858l.594-2.046c.682.396 1.826.814 3.124.814 1.76 0 3.08-.924 3.08-3.234v-.924h-.044c-.616.946-1.694 1.584-3.124 1.584-2.662 0-4.554-2.2-4.554-5.236 0-3.52 2.288-5.654 4.862-5.654 1.65 0 2.596.792 3.102 1.672h.044l.11-1.43h2.354c-.044.726-.088 1.606-.088 3.08zm-2.706 2.948v-1.738c0-.264-.022-.506-.088-.726-.286-.99-1.056-1.738-2.2-1.738-1.518 0-2.64 1.32-2.64 3.498 0 1.826.924 3.3 2.618 3.3 1.012 0 1.892-.66 2.2-1.65.088-.264.11-.638.11-.946zm5.622 4.686v-7.26c0-1.452-.022-2.508-.088-3.454h2.332l.11 2.024h.066c.528-1.496 1.782-2.266 2.948-2.266.264 0 .418.022.638.066v2.53c-.242-.044-.484-.066-.814-.066-1.276 0-2.178.814-2.42 2.046-.044.242-.066.528-.066.814v5.566zm16.05-6.424v3.85c0 .968.044 1.914.176 2.574h-2.442l-.198-1.188h-.066c-.638.836-1.76 1.43-3.168 1.43-2.156 0-3.366-1.562-3.366-3.19 0-2.684 2.398-4.07 6.358-4.048v-.176c0-.704-.286-1.87-2.178-1.87-1.056 0-2.156.33-2.882.792l-.528-1.76c.792-.484 2.178-.946 3.872-.946 3.432 0 4.422 2.178 4.422 4.532zm-2.64 2.662v-1.474c-1.914-.022-3.74.374-3.74 2.002 0 1.056.682 1.54 1.54 1.54 1.1 0 1.87-.704 2.134-1.474.066-.198.066-.396.066-.594zm5.6 3.762v-7.524c0-1.232-.044-2.266-.088-3.19h2.31l.132 1.584h.066c.506-.836 1.474-1.826 3.3-1.826 1.408 0 2.508.792 2.97 1.98h.044c.374-.594.814-1.034 1.298-1.342.616-.418 1.298-.638 2.2-.638 1.76 0 3.564 1.21 3.564 4.642v6.314h-2.64v-5.918c0-1.782-.616-2.838-1.914-2.838-.924 0-1.606.66-1.892 1.43-.088.242-.132.594-.132.902v6.424h-2.64v-6.204c0-1.496-.594-2.552-1.848-2.552-1.012 0-1.694.792-1.958 1.518-.088.286-.132.594-.132.902v6.336z" fill="var(--tme-logo-color)" fillRule="nonzero"></path>
+					</g>
+				</svg>
+			</a>
+			<a class="tgme_head_right_btn" href="//telegram.org/dl?tme=c6fdc328e7bf2599c3_8728144816911013995">
+				Download for Mac
+			</a>
 		</div>
 	</div>
-
-	<div id="bottom_nav" class="l-row b-white">
-		<div class="l-block l-np">
-			<ul id="main_nav" class="f-nav">
-				<li id="logo"><a href="/">GeneralStonks</a></li>
-				<li>
-					<span class="header">Услуги</span>
-					<div id="brokerageM" class="l-twelve DDM">
-						<div class="l-twelve bdrBLGray l-pb1-5">
-							<a href="/Futures" target="_self" class="ddmBlock l-twelve">
-								<p class="l-twelve t-base f-bold t-center">Trade Futures</p>
-								<p class="l-twelve f-size14 f-l-height18">Save on trades with discount commissions & low margins </p>
-							</a>
-						</div>
-						<div class="l-four l-mt1-5">
-							<a href="/Micro-Emini-Futures" target="_self" class="l-twelve ddmBlock">
-								<p class="l-twelve t-base f-bold t-left">Micro E-minis</p>
-								<p class="l-twelve f-size14 f-l-height18 t-left">Trade the most liquid futures for less</p>
-							</a>
-						</div>
-
-						<div class="l-four l-mt1-5">
-							<a href="/Micro-Crude-Oil-Futures" target="_self" class="l-twelve ddmBlock">
-								<p class="l-twelve t-base f-bold t-left">Micro Crude Oil</p>
-								<p class="l-twelve f-size14 f-l-height18 t-left">Trade the world’s most popular oil contract</p>
-							</a>
-						</div>
-							
-						<div class="l-four l-nmr l-mt1-5">
-							<a href="/Nano-Bitcoin-Futures.php" target="_self" class="l-twelve ddmBlock">
-								<p class="l-twelve t-base f-bold t-left">Nano Bitcoin</p>
-								<p class="l-twelve f-size14 f-l-height18 t-left">Trade Bitcoin futures at a fraction of the cost</p>
-							</a>
-						</div>
-					</div>
-				</li>
-
-				<li>
-					<span class="header">Инструкции</span>
-					<div id="platformM" class="l-twelve DDM">
-						<div class="l-twelve bdrBLGray l-pb1-5">
-							<div class="l-four">
-								<a href="/Analyze" target="_self" class="l-twelve ddmBlock">
-									<p class="l-twelve t-base f-bold t-left">Chart</p>
-									<p class="l-twelve f-size14 f-l-height18 t-left">Uncover trading ideas</p>
-								</a>
-								<a href="/Build" target="_self" class="l-twelve ddmBlock">
-									<p class="l-twelve t-base f-bold t-left">Develop</p>
-									<p class="l-twelve f-size14 f-l-height18 t-left">Indicators, algos & trading apps</p>
-								</a>
-							</div>
-							<div class="l-four">
-								<a href="/Simulate" target="_self" class="l-twelve ddmBlock">
-									<p class="l-twelve t-base f-bold t-left">Simulate</p>
-									<p class="l-twelve f-size14 f-l-height18 t-left">Trade simulation & backtest</p>
-								</a>
-								<a href="/Trade" target="_self" class="l-twelve ddmBlock">
-									<p class="l-twelve t-base f-bold t-left">Trade</p>
-									<p class="l-twelve f-size14 f-l-height18 t-left">What you want, how you want</p>
-								</a>
-							</div>
-							<div class="l-four l-nmr">
-								<a href="/Trading-Indicators" target="_self" class="l-twelve ddmBlock">
-									<p class="l-twelve t-base f-bold t-left">Personalize</p>
-									<p class="l-twelve f-size14 f-l-height18 t-left">1000s of 3rd party add-ons</p>
-								</a>
-								<a href="/Choice" target="_self" class="l-twelve ddmBlock">
-									<p class="l-twelve t-base f-bold t-left">Choice</p>
-									<p class="l-twelve f-size14 f-l-height18 t-left">Wide selection of brokers</p>
-								</a>
-							</div>
-						</div>
-
-						<a href="/BuyPlatform" target="_self" class="ddmBlock l-twelve l-mt1-5">
-							<p class="l-twelve t-base f-bold t-center">Pricing</p>
-							<p class="l-twelve f-size14 f-l-height18">NinjaTrader is <span class="f-bold c-green">ALWAYS FREE</span> to use for advanced charting, backtesting & trade simulation</p>
-						</a>
-					</div>
-				</li>
-
-				<li>
-					<span class="header">Поддержка</span>
-					<div id="helpM" class="l-twelve DDM">
-						<a href="/Help" target="_self" class="ddmBlock l-twelve l-mb1-5">
-							<p class="l-twelve t-base f-bold t-center">Contact Support</p>
-						</a>
-						<div class="l-twelve bdrTLGray l-pt3 sl_swap" id="sf2">
-							<div class="l-four">
-								<p class="l-twelve l-nmb l-plr1 l-pth t-base f-bold t-center">Platform</p>
-								<a href="/Help-Connection-Guides" target="_self" class="ddmBlockInline l-twelve">
-									<p class="l-twelve f-size14 t-center">Help Guides</p>
-								</a>
-								<a href="https://ninjatrader.com/support/forum/index.php" target="_self" class="ddmBlockInline l-twelve" rel="noopener">
-									<p class="l-twelve f-size14 t-center">Support Forum</p>
-								</a>
-								<a href="/PlatformDirect" target="_self" class="ddmBlockInline l-twelve">
-									<p class="l-twelve f-size14 t-center">Existing User Download</p>
-								</a>
-							</div>
-							<div class="l-four">
-								<p class="l-twelve l-nmb l-plr1 l-pth t-base f-bold t-center">Training</p>
-								<a href="/Video-Guides" target="_self" class="ddmBlockInline l-twelve">
-									<p class="l-twelve f-size14 t-center">Video Guides</p>
-								</a>
-								<a href="/events/" target="_self" class="ddmBlockInline l-twelve">
-									<p class="l-twelve f-size14 t-center">Livestreams</p>
-								</a>
-								<a href="/blog/" target="_self" class="ddmBlockInline l-twelve" rel="noopener">
-									<p class="l-twelve f-size14 t-center">Blog</p>
-								</a>
-							</div>
-							<div class="l-four l-nmr">
-								<p class="l-twelve l-nmb l-plr1 l-pth t-base f-bold t-center">Brokerage</p>
-								<a href="/ContactUs#TradeDesk" target="_self" class="ddmBlockInline l-twelve">
-									<p class="l-twelve f-size14 t-center">Emergency Trade Desk</p>
-								</a>
-								<a href="/AccountManagement" target="_self" class="ddmBlockInline l-twelve">
-									<p class="l-twelve f-size14 t-center">Account Management</p>
-								</a>
-								<a href="https://ninjatrader.com/blog/trade-desk-calendar/" target="_self" class="ddmBlockInline l-twelve" rel="noopener">
-									<p class="l-twelve f-size14 t-center">Trade Desk Calendar</p>
-								</a>
-							</div>
-						</div>
-					</div>
-				</li>
-			</ul>
+	<div class="tgme_body_wrap">
+		<div class="tgme_page">
+			<div class="tgme_page_photo">
+				<a href="tg://resolve?domain=general_stonks"><img class="tgme_page_photo_image" src="https://cdn4.telegram-cdn.org/file/XA8wm1juJmk-pvVpZ_VMYwy5Yi2gUbEfHSrKu7Iy_IO-yPD0v4eEI6Q1wwWzIdicXsYLTa5OPPHi_kRSVbvyLh0HYwghvcg-rSvkK9O7DDoI1GbYCYucswGBfs_XjhGJjpJ_tEeAjzktYOK_q5E-BXd_xY0Qor-nWONx4n1xz4U3wTfvJPpVhmp06FXtg7J7Ow9b1t5oV7ysQWxyyvQIBa4OB3ykKMu0NWsMC5smSiCkHCX3JrzHyze1oEC5Ypumg_Wt5md9JQSZlq10XWrKgk-7p-B5K7r6B7Mi4RF2Nn0kMgJRAJSOhDqFGOIcxNgTjnsBHNxPuBuTReug-5tCCw.jpg"></a>
+			</div>
+			<div class="tgme_page_title" dir="auto">
+				<span dir="auto">General Stonks</span>
+			</div>
+			<div class="tgme_page_extra">10 514 subscribers</div>
+			<div class="tgme_page_description" dir="auto">Рабочие прогнозы для торговли криптовалютами. С нами ты перестанешь сливать деньги</div>
+			<div class="tgme_page_action">
+				<a class="tgme_action_button_new shine" href="tg://resolve?domain=general_stonks">View in Telegram</a>
+			</div>
+			<!-- WEBOGRAM_BTN -->
+			<div class="tgme_page_additional">
+				If you have <strong>Telegram</strong>, you can view and join <br><strong>General Stonks</strong> right away.
+			</div>
 		</div>
+
 	</div>
-	<div id="mobile_nav" class="l-row b-black">
-		<div class="l-block l-np">
-			<ul id="mobile_nav_menu">
-				<li id="mobile_nav_menu_trigger">
-					<a href class="trg"></a>
-					<div id="mobileM" class="l-twelve DDM is-invisible">
-						<a href="#" class="ddmBlock toggleSM">Brokerage</a>
-						<div class="toggleSMC is-invisible">
-							<a href="/Futures" target="_self" class="ddmBlock">Trade Futures</a>
-							<a href="/Micro-Emini-Futures" target="_self" class="ddmBlock">Micro E-minis</a>
-							<a href="/Micro-Crude-Oil-Futures" target="_self" class="ddmBlock">Micro Crude Oil</a>
-							<a href="/Nano-Bitcoin-Futures.php" target="_self" class="ddmBlock">Nano Bitcoin</a>
-						</div>
-						<a href="#" class="ddmBlock toggleSM">Platform</a>
-						<div class="toggleSMC is-invisible">
-							<a href="/BuyPlatform" target="_self" class="ddmBlock">Pricing</a>
-							<a href="/Analyze" target="_self" class="ddmBlock">Chart</a>
-							<a href="/Simulate" target="_self" class="ddmBlock">Simulate</a>
-							<a href="/Trading-Indicators" target="_self" class="ddmBlock">Personalize</a>
-							<a href="/Build" target="_self" class="ddmBlock">Develop</a>
-							<a href="/Trade" target="_self" class="ddmBlock">Trade</a>
-							<a href="/Choice" target="_self" class="ddmBlock">Choice</a>
-						</div>
-						<a href="#" class="ddmBlock toggleSM">Help</a>
-						<div class="toggleSMC is-invisible">
-							<a href="/Help" target="_self" class="tl">Contact Support</a>
-							<p>Platform</p>
-							<a href="/Help-Connection-Guides" target="_self" class="ddmBlock ind">Help Guides</a>
-							<a href="/support/forum/index.php" target="_self" class="ddmBlock ind">Support Forum</a>
-							<a href="/PlatformDirect" target="_self" class="ddmBlock ind">Existing User Downloads</a>
-							<p class="l-mt1">Training</p>
-							<a href="/events/" target="_self" class="ddmBlock ind">Livestreams</a>
-							<a href="/Video-Guides" target="_self" class="ddmBlock ind">Video Guides</a>
-							<a href="/blog/" target="_self" class="ddmBlock ind" rel="noopener">Blog</a>
-							<p class="l-mt1">Brokerage</p>
-							<a href="/ContactUs#TradeDesk" target="_self" class="ddmBlock ind">Emergency Trade Desk</a>
-							<a href="/AccountManagement" target="_self" class="ddmBlock ind">Account Management</a>
-							<a href="/blog/trade-desk-calendar/" target="_self" class="ddmBlock ind">Trade Desk Calendar</a>
-						</div>
-						<a href="//getstarted.ninjatrader.com" target="_self" class="ddmBlock">Open Account</a>
-						<a href="https://account.ninjatrader.com/" target="_self" class="ddmBlock">Log In</a>
-						<a href="/ContactUs" target="_self" class="ddmBlock">Contact</a>
-						<a href="/" target="_self" class="ddmBlock toggleSM">English</a>
-						<div id="languageM-M" class="toggleSMC is-invisible sl_opaque">
-							<a href="/ " target="_self" class="ddmBlock">English</a>
-							<a href="/de/" target="_self" class="ddmBlock">Deutsch</a>
-							<a href="/es/" target="_self" class="ddmBlock">Español</a>
-							<a href="/fr/" target="_self" class="ddmBlock">French</a>
-							<a href="/it/" target="_self" class="ddmBlock">Italiano</a>
-              				<a href="/pt/" target="_self" class="ddmBlock">Português</a>
-							<a href="/ru/" target="_self" class="ddmBlock">Русский</a>
-						</div>
-					</div>
-				</li>
-				<li id="logo"><a href="/">GeneralStonks</a></li>
-			</ul>
-		</div>
-	</div>
-</header>
-	<div id="tf_hero" class="refresh l-row l-rel l-mb2">
-      <div id="home" class="container">
-        <h1 class="l-mb1 t-left c-white">Торгуйте Фьючерсами с Crypto Роботом </h1>
-        <h3 class="l-mb2 t-left c-white"><span class="shadow">Начните зарабатывать с</span> <span class="f-bold">БЕСПЛАТНЫХ</span> <span class="shadow"> прогнозов и моделирования торговли.</span></h3>
-        <form id="dDownload" action="SSI/Processor/licenseCheck.php" method="POST" class="flat l-twelve">
-            <ul class="l-inline">
-                <li class="l-nine"><input type="text" name="email" id="email" class="f-size24 f-l-height60 c-gray" placeholder="Торговый бот в Telegram"></li>
-                <li class="l-three l-nmr">
-                <input type="hidden" name="email2" id="email2">
-                <input type="hidden" name="referred_url_start" id="referred_url_start" value="ninjatrader.com/">
-                <input type="hidden" name="ga_label_start" id="ga_label_start" value="Home">
-                <input type="submit" class="redFlatSubmit f-size24 f-l-height44 c-white t-center" value="Перейти">
-                </li>
-            </ul>
-        </form>
-      </div>
-    </div>
-    <div id="bottomHero" class="l-row b-white">
-      <div class="l-block">
-        <h2 class="f-bold">Ощутите Безграничные возможности торговли на Фьючерсах Binance</h2>
-        <p class="l-mb2">Все стратегии торговли на фьючерсах. Как постоянно зарабатывать и не терять деньги. Инструкции для новичков. Создание и настройка индивидуальной технологии заработка. </p>
-        <div class="l-three t-center icon clickable">
-          <div id="product" class="iconCont"></div>
-          <p class="l-nm l-mt1 m-center">
-            <a class="t-base d-block">
-              <strong class="d-block l-mb1">Услуги для всех трейдеров</strong>
-				Ослеживание самых популярных в мире паттернов
-            </a>
-          </p>
-        </div>
-        <div class="l-three t-center icon clickable">
-          <div id="award" class="iconCont"></div>
-          <p class="l-nm l-mt1 m-center">
-            <a class="t-base d-block" target="_self">
-				<strong class="d-block l-mb1">Много довольных клиентов</strong>
-              Мы помогли многим трейдерам. Кто-то даже сумел заработать целое состояние.
-            </a>
-          </p>
-        </div>
-        <div class="l-three t-center icon clickable">
-          <div id="savings" class="iconCont"></div>
-          <p class="l-nm l-mt1 m-center">
-            <a class="t-base d-block">
-              <strong class="d-block l-mb1">Колосальная экономия времени</strong>
-              Вам уже не нужно часами мониторить графики. Программа сделает это за вас.
-            </a>
-          </p>
-        </div>
-        <div class="l-three t-center icon clickable l-nmr">
-          <div id="support" class="iconCont"></div>
-          <p class="l-nm l-mt1 m-center">
-          <a class="t-base d-block" target="_self">
-            <strong class="d-block l-mb1">Закрытое сообщество</strong>
-            Открытые комментарии к прогнозам. Советы и консультации.
-          </a>
-          </p>
-        </div>
-      </div>
-    </div>
+</div>
 
-    <div id="cta" class="l-row">
-        <div class="l-block d-grid2C">
-            <div>
-                <h2 class="l-nmb t-center f-bold c-white">КОЛЛОСАЛЬНЫЕ ВОЗМОЖНОСТИ <span class="d-block f-reg f-ital">для</span>TRADING И ТОРГОВЛИ НА FUTURES</h2>
-            </div>
-            <div>
-                <h3 class="t-center c-white l-mb1">Победитель конкурса Fintech Award Winner</h3>
-                <p class="t-center c-white l-nmb">Второй год подряд Stonks получает признание за уникальное сочетание высокопроизводительной торговой платформы и поддержки в режиме реального времени.</p>
-            </div>
-        </div>
-    </div>
+<div id="tgme_frame_cont"></div>
 
-    <div class="l-row b-grayGrad">
-      <div class="l-block">
-        <h2 class="f-bold">Торгуйте Фьючерсами <span class="c-green">Выгодно</span></h2>
-        <p class="l-mb2">Выбери свой режим торговли</p>
-        <div class="flexContain">
-          <div id class="pr bucketHalf bdrGreen">
-            <a href="http://localhost:63342/my_projects/new_stonks/site/SaveWeb2zip-ninjatrader-com/pages/50.html?_ijt=8t9o78l1jao1l9iefaq0ihu7j8&_ij_reload=RELOAD_ON_SAVE" target="_self" class="l-twelve">
-              <h3 class="l-twelve l-p2 ">СИГНАЛЫ</h3>
-              <div class="ro l-twelve l-p1">
-                <p class="l-twelve l-nmb l-mt1 f-size20 f-l-height24 t-center">Получать прогнозы 24/7</p>
-                <p class="l-twelve l-nmb f-bold f-size52 f-l-height60 t-center c-green">$50 мес</p>
-                <p class="l-twelve l-mb1 f-size20 f-l-height24 t-center">круглосуточный анализ паттернов, остается только повторять. Максимум информации</p>
-              </div>
-            </a>
-          </div>
+<script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
 
-          <div id class="pr bucketHalf bdrGreen">
-            <a href="Unlimited-Simulated-Trading" target="_self" class="l-twelve">
-              <h3 class="l-twelve l-p2">AUTOMATIC</h3>
-              <div class="ro l-twelve l-p1">
-                <p class="l-twelve l-nmb l-mt1 f-size20 f-l-height24 t-center">Программа торгует за вас</p>
-                <p class="l-twelve l-nmb f-bold f-size52 f-l-height60 t-center c-green">$100 мес</p>
-                <p class="l-twelve l-mb1 f-size20 f-l-height24 t-center">автоматизированная торговля</p>
-              </div>
-            </a>
-          </div>
+<script type="text/javascript">
 
-        </div>
+	var protoUrl = "tg:\/\/resolve?domain=general_stonks";
+	if (false) {
+		var iframeContEl = document.getElementById('tgme_frame_cont') || document.body;
+		var iframeEl = document.createElement('iframe');
+		iframeContEl.appendChild(iframeEl);
+		var pageHidden = false;
+		window.addEventListener('pagehide', function () {
+			pageHidden = true;
+		}, false);
+		window.addEventListener('blur', function () {
+			pageHidden = true;
+		}, false);
+		if (iframeEl !== null) {
+			iframeEl.src = protoUrl;
+		}
+		!false && setTimeout(function() {
+			if (!pageHidden) {
+				window.location = protoUrl;
+			}
+		}, 2000);
+	}
+	else if (protoUrl) {
+		setTimeout(function() {
+			window.location = protoUrl;
+		}, 100);
+	}
 
-		  <div class="flexContain" style="margin-top: 40px">
-			  <div id class="pr bucketHalf bdrGreen">
-				  <LINK href="/limited-stonks" target="_self" class="l-twelve">
-					  <h3 class="l-twelve l-p2 ">СИГНАЛЫ</h3>
-					  <div class="ro l-twelve l-p1">
-						  <p class="l-twelve l-nmb l-mt1 f-size20 f-l-height24 t-center">Получать прогнозы 24/7</p>
-						  <p class="l-twelve l-nmb f-bold f-size52 f-l-height60 t-center c-green">$30 мес</p>
-						  <p class="l-twelve l-mb1 f-size20 f-l-height24 t-center">круглосуточный анализ паттернов, только точки входа</p>
-					  </div>
-				  </LINK>
-			  </div>
+	var tme_bg = document.getElementById('tgme_background');
+	if (tme_bg) {
+		TWallpaper.init(tme_bg);
+		TWallpaper.animate(true);
+		window.onfocus = function(){ TWallpaper.update(); };
+	}
+	document.body.classList.remove('no_transition');
 
-			  <div id class="pr bucketHalf bdrGreen">
-				  <a href="Unlimited-Simulated-Trading" target="_self" class="l-twelve">
-					  <h3 class="l-twelve l-p2">КНИГА</h3>
-					  <div class="ro l-twelve l-p1">
-						  <p class="l-twelve l-nmb l-mt1 f-size20 f-l-height24 t-center">Трейдинг на примерах</p>
-						  <p class="l-twelve l-nmb f-bold f-size52 f-l-height60 t-center c-green">$10</p>
-						  <p class="l-twelve l-mb1 f-size20 f-l-height24 t-center">наша авторская книга в электронном формате, минимум сухой информации, только практика</p>
-					  </div>
-				  </a>
-			  </div>
+	function toggleTheme(dark) {
+		document.documentElement.classList.toggle('theme_dark', dark);
+		window.Telegram && Telegram.setWidgetOptions({dark: dark});
+	}
+	if (window.matchMedia) {
+		var darkMedia = window.matchMedia('(prefers-color-scheme: dark)');
+		toggleTheme(darkMedia.matches);
+		darkMedia.addListener(function(e) {
+			toggleTheme(e.matches);
+		});
+	}
 
-		  </div>
 
-        <p class="l-twelve l-p1 l-mt2 l-mb3 m-f-size32 f-l-height40">зайди и протестируй возможности в нашем телеграм канале  <span class="d-block c-green">ЭТО БЕСПЛАТНО!</span></p>
-      </div>
-    </div>
+</script>
 
-    <div class="l-row l-rel" id="indexEco">
-      <div class="indexArrow"></div>
-      <div class="l-block">
-        <div class="l-six">
-          <h2 class="t-left c-white">Стратегии <span class="d-block">и риски</span></h2>
-          <p class="l-ten t-left c-white">Хотите узнать о преимуществах, недостатках, стратегиях и рисках фьючерсной торговли?</p>
-          <a href="./pages/Фьючерсный%20брокер%20_%20Платформа%20для%20торговли%20фьючерсами%20_%20NinjaTrader.html" class="whiteOpen bHover l-left eco">узнать больше</a>
-        </div>
-        <div class="l-six l-right" id="indexEcoSecond">
-          <h2 class="t-right c-white">Обучение <span class="d-block">для новичков</span></h2>
-          <p class="l-nine l-right t-right c-white">Обучение трейдингу по прогнозам для начинающих. Пошаговые инструкции с примерами.</p>
-          <a href="/Build" class="whiteOpen bHover l-right">узнать больше</a>
-        </div>
-      </div>
-      <div class="indexArrowBottom"></div>
-    </div>
 
-    <div id="wt_row" class="refresh l-row">
-      <div id="wt" class="container">
-        <h2>Зачем торговать фьючерсами по прогнозам?</h2>
-        <div>
-            <h3>Торговля в плюс</h3>
-            <p class="t-center">Выберите, какие паттерны хотите остеживать. Полчайте уведомления когда входить в сделку.</p>
-            <p class="t-center l-nm"><a href="https://ninjatrader.com/Micro-Emini-Futures" target="_blank" class="redOpen">ПАТТЕРНЫ</a></p>
-        </div>
-        <div></div>
-        <div></div>
-        <div>
-            <h3>Пассивный доход</h3>
-            <p class="t-center">Настройте автоматизированную торговлю по выбранным паттернам. Зарабатывайте.</p>
-            <p class="t-center l-nm"><a href="https://ninjatrader.com/Micro-Emini-Futures" target="_blank" class="redOpen">ПОДРОБНЕЕ</a></p>
-        </div>
-      </div>
-    </div>
 
-    <div id="wtch_row" class="refresh l-row">
-        <div id="wtch" class="container">
-            <h2 class="f-bold l-mb1">Новичок в крипте? Нажимай и смотри!</h2>
-            <p class="l-mb2">Что нужно знать что-бы зарабатывать на крипте. Полезные обучающие видео.</p>
-            <div>
-                <a href="https://www.youtube.com/watch?v=7LTQuOgbGTs" target="_self">
-                  <p>Как пополнить счёт Бинанс P2P</p>
-                  <img src="images/binace.jpeg" alt="The Opening Range" loading="lazy">
-                </a>
-            </div>
-            <div>
-                <a href="https://www.youtube.com/watch?v=oCFyfzTLL3M" target="_self">
-                  <p>Как Торговать Фьючерсами</p>
-                  <img src="images/futures.jpeg" alt="Bars Closing" loading="lazy">
-                </a>
-            </div>
-        </div>
-    </div>
+</body>
+<!--  <body class="home">-->
+<!--    <a href="https://t.me/general_stonks" target="_self" class="stickyCTA noOP" id="FreeDownload">БЕСПЛАТНО! Попробовать</a>    &lt;!&ndash; NinjaTrader Google Tag Manager (noscript) &ndash;&gt;-->
 
-    <footer>
-	<div class="l-row">
-		<div class="l-block">
-			<div class="l-three">
-				<ul class="l-eleven l-pr1 l-stacked">
-					<li><a href="/blog/" target="_self" class="header">NEWS & BLOG</a></li>
-					<div id="posts" class="l-twelve"></div>
-					<li><a href="/blog/trade-desk-calendar/" target="_self">Trade Desk Calendar</a></li>
-				</ul>
-			</div>
-			<div class="l-three">
-				<ul class="l-stacked">
-			    	<li><a href="/GetStarted" target="_self" class="header">TRADING PLATFORM</a></li>
-			    	<li><a href="/Analyze" target="_self">Charting Software</a></li>
-			    	<li><a href="/Trading-Indicators" target="_self">Trading Indicators</a></li>
-			    	<li><a href="/Simulate" target="_self">Simulate</a></li>
-			    	<li><a href="/Trade" target="_self">Trade</a></li>
-			    	<li><a href="/BuyPlatform" target="_self">Buy Trading Platform</a></li>
-			    	<li><a href="/LicenseComparison" target="_self">License Comparison</a></li>
-			    	<li><a href="/PlatformDirect" target="_self">Existing User Download</a></li>
-			    	<li><a href="/FreeLiveData" target="_self">Free Live Data</a></li>
-		    	</ul>
-			</div>
-			<div class="l-three">
-				<ul class="l-stacked">
-			    	<li><a href="/Futures" target="_self" class="header">BROKERAGE</a></li>
-			    	<li><a href="/Micro-Emini-Futures" target="_self">Micro E-mini Futures</a></li>
-			    	<li><a href="/Micro-Bitcoin-Futures" target="_self">Micro Bitcoin Futures</a></li>
-			    	<li><a href="/Micro-Crude-Oil-Futures" target="_self">Micro Crude Oil Futures</a></li>
-			    	<li><a href="/Nano-Bitcoin-Futures" target="_self">Nano Bitcoin Futures</a></li>
-		    	</ul>
-		    	<ul class="l-stacked">
-			    	<li><a href="/OpenAccount" target="_self" class="header">OPEN ACCOUNT</a></li>
-			    	<li><a href="/Futures" target="_self">Futures Broker</a></li>
-			    	<li><a href="/Margins-Position-Management" target="_self">Margins</a></li>
-			    </ul>
-			</div>
-			<div class="l-three l-nmr">
-				<ul class="l-stacked">
-					<li><a href="/Help" target="_self" class="header">HELP</a></li>
-					<li><a href="/Help" target="_self">Contact Support</a></li>
-					<li><a href="/blog/futures-basics-understanding-futures-trading/" target="_self">Futures Basics</a></li>
-					<li><a href="http://www.ninjatrader.com/support/forum/index.php" target="_blank" rel="noopener">Support Forum</a></li>
-					<li><a href="/FAQ" target="_self">FAQs</a></li>
-				</ul>
-				<ul class="l-stacked">
-					<li><a href="/AboutUs" target="_self" class="header">ABOUT US</a></li>
-					<li><a href="/ContactUs" target="_self">Contact Us</a></li>
-					<li><a href="https://ninjatrader.bamboohr.com/jobs/" target="_blank" rel="noopener">Careers</a></li>
-				</ul>
-			</div>
-		  
-			<p class="l-twelve l-mb1">Copyright <sup>©</sup> 2018. Все права защищены. StonksPro and the StonksPro logo. Reg. U.S. Pat. & Tm.</p>
-			<p class="l-twelve l-mb1">Торговля фьючерсами, иностранной валютой и опционами сопряжена со значительным риском. Прошлые показатели не обязательно свидетельствуют о будущих результатах.</p>
-		</div>
-	</div>
-</footer>
-    <script src="js/jquery-2.2.4.min.js"></script>
-    <script src="js/plugins-min.js"></script>
-    <script src="js/main-min.js"></script>
-    <script src="js/NMDY-min.js"></script>
-    <script>
-      window.onload = function () {
-        downloadButton();
-      }
-    </script>
-    
-  
-</body></html>
+<!--<header>-->
+<!--	<div id="top_nav" class="l-row b-black">-->
+<!--		<div class="l-block l-np">-->
+<!--			<ul id="black_bar" class="f-nav">-->
+<!--				<li>-->
+<!--					<a id="Contact">На рынке с 2020 года</a>-->
+<!--				</li>-->
+<!--				<li class="LogIn">-->
+<!--                 <a href="https://account.ninjatrader.com/welcome" target="_blank" id="LogInL">Log In</a>-->
+<!--             </li>-->
+<!--				<li class="account"><a href="https://account.ninjatrader.com/register" target="_self">Open Account</a></li>-->
+<!--			</ul>-->
+<!--		</div>-->
+<!--	</div>-->
+
+<!--	<div id="bottom_nav" class="l-row b-white">-->
+<!--		<div class="l-block l-np">-->
+<!--			<ul id="main_nav" class="f-nav">-->
+<!--				<li id="logo"><a href="/">GeneralStonks</a></li>-->
+<!--				<li>-->
+<!--					<span class="header">Услуги</span>-->
+<!--					<div id="brokerageM" class="l-twelve DDM">-->
+<!--						<div class="l-twelve bdrBLGray l-pb1-5">-->
+<!--							<a href="/Futures" target="_self" class="ddmBlock l-twelve">-->
+<!--								<p class="l-twelve t-base f-bold t-center">Trade Futures</p>-->
+<!--								<p class="l-twelve f-size14 f-l-height18">Save on trades with discount commissions & low margins </p>-->
+<!--							</a>-->
+<!--						</div>-->
+<!--						<div class="l-four l-mt1-5">-->
+<!--							<a href="/Micro-Emini-Futures" target="_self" class="l-twelve ddmBlock">-->
+<!--								<p class="l-twelve t-base f-bold t-left">Micro E-minis</p>-->
+<!--								<p class="l-twelve f-size14 f-l-height18 t-left">Trade the most liquid futures for less</p>-->
+<!--							</a>-->
+<!--						</div>-->
+
+<!--						<div class="l-four l-mt1-5">-->
+<!--							<a href="/Micro-Crude-Oil-Futures" target="_self" class="l-twelve ddmBlock">-->
+<!--								<p class="l-twelve t-base f-bold t-left">Micro Crude Oil</p>-->
+<!--								<p class="l-twelve f-size14 f-l-height18 t-left">Trade the world’s most popular oil contract</p>-->
+<!--							</a>-->
+<!--						</div>-->
+<!--							-->
+<!--						<div class="l-four l-nmr l-mt1-5">-->
+<!--							<a href="/Nano-Bitcoin-Futures.php" target="_self" class="l-twelve ddmBlock">-->
+<!--								<p class="l-twelve t-base f-bold t-left">Nano Bitcoin</p>-->
+<!--								<p class="l-twelve f-size14 f-l-height18 t-left">Trade Bitcoin futures at a fraction of the cost</p>-->
+<!--							</a>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</li>-->
+
+<!--				<li>-->
+<!--					<span class="header">Инструкции</span>-->
+<!--					<div id="platformM" class="l-twelve DDM">-->
+<!--						<div class="l-twelve bdrBLGray l-pb1-5">-->
+<!--							<div class="l-four">-->
+<!--								<a href="/Analyze" target="_self" class="l-twelve ddmBlock">-->
+<!--									<p class="l-twelve t-base f-bold t-left">Chart</p>-->
+<!--									<p class="l-twelve f-size14 f-l-height18 t-left">Uncover trading ideas</p>-->
+<!--								</a>-->
+<!--								<a href="/Build" target="_self" class="l-twelve ddmBlock">-->
+<!--									<p class="l-twelve t-base f-bold t-left">Develop</p>-->
+<!--									<p class="l-twelve f-size14 f-l-height18 t-left">Indicators, algos & trading apps</p>-->
+<!--								</a>-->
+<!--							</div>-->
+<!--							<div class="l-four">-->
+<!--								<a href="/Simulate" target="_self" class="l-twelve ddmBlock">-->
+<!--									<p class="l-twelve t-base f-bold t-left">Simulate</p>-->
+<!--									<p class="l-twelve f-size14 f-l-height18 t-left">Trade simulation & backtest</p>-->
+<!--								</a>-->
+<!--								<a href="/Trade" target="_self" class="l-twelve ddmBlock">-->
+<!--									<p class="l-twelve t-base f-bold t-left">Trade</p>-->
+<!--									<p class="l-twelve f-size14 f-l-height18 t-left">What you want, how you want</p>-->
+<!--								</a>-->
+<!--							</div>-->
+<!--							<div class="l-four l-nmr">-->
+<!--								<a href="/Trading-Indicators" target="_self" class="l-twelve ddmBlock">-->
+<!--									<p class="l-twelve t-base f-bold t-left">Personalize</p>-->
+<!--									<p class="l-twelve f-size14 f-l-height18 t-left">1000s of 3rd party add-ons</p>-->
+<!--								</a>-->
+<!--								<a href="/Choice" target="_self" class="l-twelve ddmBlock">-->
+<!--									<p class="l-twelve t-base f-bold t-left">Choice</p>-->
+<!--									<p class="l-twelve f-size14 f-l-height18 t-left">Wide selection of brokers</p>-->
+<!--								</a>-->
+<!--							</div>-->
+<!--						</div>-->
+
+<!--						<a href="/BuyPlatform" target="_self" class="ddmBlock l-twelve l-mt1-5">-->
+<!--							<p class="l-twelve t-base f-bold t-center">Pricing</p>-->
+<!--							<p class="l-twelve f-size14 f-l-height18">NinjaTrader is <span class="f-bold c-green">ALWAYS FREE</span> to use for advanced charting, backtesting & trade simulation</p>-->
+<!--						</a>-->
+<!--					</div>-->
+<!--				</li>-->
+
+<!--				<li>-->
+<!--					<span class="header">Поддержка</span>-->
+<!--					<div id="helpM" class="l-twelve DDM">-->
+<!--						<a href="/Help" target="_self" class="ddmBlock l-twelve l-mb1-5">-->
+<!--							<p class="l-twelve t-base f-bold t-center">Contact Support</p>-->
+<!--						</a>-->
+<!--						<div class="l-twelve bdrTLGray l-pt3 sl_swap" id="sf2">-->
+<!--							<div class="l-four">-->
+<!--								<p class="l-twelve l-nmb l-plr1 l-pth t-base f-bold t-center">Platform</p>-->
+<!--								<a href="/Help-Connection-Guides" target="_self" class="ddmBlockInline l-twelve">-->
+<!--									<p class="l-twelve f-size14 t-center">Help Guides</p>-->
+<!--								</a>-->
+<!--								<a href="https://ninjatrader.com/support/forum/index.php" target="_self" class="ddmBlockInline l-twelve" rel="noopener">-->
+<!--									<p class="l-twelve f-size14 t-center">Support Forum</p>-->
+<!--								</a>-->
+<!--								<a href="/PlatformDirect" target="_self" class="ddmBlockInline l-twelve">-->
+<!--									<p class="l-twelve f-size14 t-center">Existing User Download</p>-->
+<!--								</a>-->
+<!--							</div>-->
+<!--							<div class="l-four">-->
+<!--								<p class="l-twelve l-nmb l-plr1 l-pth t-base f-bold t-center">Training</p>-->
+<!--								<a href="/Video-Guides" target="_self" class="ddmBlockInline l-twelve">-->
+<!--									<p class="l-twelve f-size14 t-center">Video Guides</p>-->
+<!--								</a>-->
+<!--								<a href="/events/" target="_self" class="ddmBlockInline l-twelve">-->
+<!--									<p class="l-twelve f-size14 t-center">Livestreams</p>-->
+<!--								</a>-->
+<!--								<a href="/blog/" target="_self" class="ddmBlockInline l-twelve" rel="noopener">-->
+<!--									<p class="l-twelve f-size14 t-center">Blog</p>-->
+<!--								</a>-->
+<!--							</div>-->
+<!--							<div class="l-four l-nmr">-->
+<!--								<p class="l-twelve l-nmb l-plr1 l-pth t-base f-bold t-center">Brokerage</p>-->
+<!--								<a href="/ContactUs#TradeDesk" target="_self" class="ddmBlockInline l-twelve">-->
+<!--									<p class="l-twelve f-size14 t-center">Emergency Trade Desk</p>-->
+<!--								</a>-->
+<!--								<a href="/AccountManagement" target="_self" class="ddmBlockInline l-twelve">-->
+<!--									<p class="l-twelve f-size14 t-center">Account Management</p>-->
+<!--								</a>-->
+<!--								<a href="https://ninjatrader.com/blog/trade-desk-calendar/" target="_self" class="ddmBlockInline l-twelve" rel="noopener">-->
+<!--									<p class="l-twelve f-size14 t-center">Trade Desk Calendar</p>-->
+<!--								</a>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</li>-->
+<!--			</ul>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--	<div id="mobile_nav" class="l-row b-black">-->
+<!--		<div class="l-block l-np">-->
+<!--			<ul id="mobile_nav_menu">-->
+<!--				<li id="mobile_nav_menu_trigger">-->
+<!--					<a href class="trg"></a>-->
+<!--					<div id="mobileM" class="l-twelve DDM is-invisible">-->
+<!--						<a href="#" class="ddmBlock toggleSM">Brokerage</a>-->
+<!--						<div class="toggleSMC is-invisible">-->
+<!--							<a href="/Futures" target="_self" class="ddmBlock">Trade Futures</a>-->
+<!--							<a href="/Micro-Emini-Futures" target="_self" class="ddmBlock">Micro E-minis</a>-->
+<!--							<a href="/Micro-Crude-Oil-Futures" target="_self" class="ddmBlock">Micro Crude Oil</a>-->
+<!--							<a href="/Nano-Bitcoin-Futures.php" target="_self" class="ddmBlock">Nano Bitcoin</a>-->
+<!--						</div>-->
+<!--						<a href="#" class="ddmBlock toggleSM">Platform</a>-->
+<!--						<div class="toggleSMC is-invisible">-->
+<!--							<a href="/BuyPlatform" target="_self" class="ddmBlock">Pricing</a>-->
+<!--							<a href="/Analyze" target="_self" class="ddmBlock">Chart</a>-->
+<!--							<a href="/Simulate" target="_self" class="ddmBlock">Simulate</a>-->
+<!--							<a href="/Trading-Indicators" target="_self" class="ddmBlock">Personalize</a>-->
+<!--							<a href="/Build" target="_self" class="ddmBlock">Develop</a>-->
+<!--							<a href="/Trade" target="_self" class="ddmBlock">Trade</a>-->
+<!--							<a href="/Choice" target="_self" class="ddmBlock">Choice</a>-->
+<!--						</div>-->
+<!--						<a href="#" class="ddmBlock toggleSM">Help</a>-->
+<!--						<div class="toggleSMC is-invisible">-->
+<!--							<a href="/Help" target="_self" class="tl">Contact Support</a>-->
+<!--							<p>Platform</p>-->
+<!--							<a href="/Help-Connection-Guides" target="_self" class="ddmBlock ind">Help Guides</a>-->
+<!--							<a href="/support/forum/index.php" target="_self" class="ddmBlock ind">Support Forum</a>-->
+<!--							<a href="/PlatformDirect" target="_self" class="ddmBlock ind">Existing User Downloads</a>-->
+<!--							<p class="l-mt1">Training</p>-->
+<!--							<a href="/events/" target="_self" class="ddmBlock ind">Livestreams</a>-->
+<!--							<a href="/Video-Guides" target="_self" class="ddmBlock ind">Video Guides</a>-->
+<!--							<a href="/blog/" target="_self" class="ddmBlock ind" rel="noopener">Blog</a>-->
+<!--							<p class="l-mt1">Brokerage</p>-->
+<!--							<a href="/ContactUs#TradeDesk" target="_self" class="ddmBlock ind">Emergency Trade Desk</a>-->
+<!--							<a href="/AccountManagement" target="_self" class="ddmBlock ind">Account Management</a>-->
+<!--							<a href="/blog/trade-desk-calendar/" target="_self" class="ddmBlock ind">Trade Desk Calendar</a>-->
+<!--						</div>-->
+<!--						<a href="//getstarted.ninjatrader.com" target="_self" class="ddmBlock">Open Account</a>-->
+<!--						<a href="https://account.ninjatrader.com/" target="_self" class="ddmBlock">Log In</a>-->
+<!--						<a href="/ContactUs" target="_self" class="ddmBlock">Contact</a>-->
+<!--						<a href="/" target="_self" class="ddmBlock toggleSM">English</a>-->
+<!--						<div id="languageM-M" class="toggleSMC is-invisible sl_opaque">-->
+<!--							<a href="/ " target="_self" class="ddmBlock">English</a>-->
+<!--							<a href="/de/" target="_self" class="ddmBlock">Deutsch</a>-->
+<!--							<a href="/es/" target="_self" class="ddmBlock">Español</a>-->
+<!--							<a href="/fr/" target="_self" class="ddmBlock">French</a>-->
+<!--							<a href="/it/" target="_self" class="ddmBlock">Italiano</a>-->
+<!--              				<a href="/pt/" target="_self" class="ddmBlock">Português</a>-->
+<!--							<a href="/ru/" target="_self" class="ddmBlock">Русский</a>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</li>-->
+<!--				<li id="logo"><a href="/">GeneralStonks</a></li>-->
+<!--			</ul>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--</header>-->
+<!--	<div id="tf_hero" class="refresh l-row l-rel l-mb2">-->
+<!--      <div id="home" class="container">-->
+<!--        <h1 class="l-mb1 t-left c-white">Торгуйте Фьючерсами с Crypto Роботом </h1>-->
+<!--        <h3 class="l-mb2 t-left c-white"><span class="shadow">Начните зарабатывать с</span> <span class="f-bold">БЕСПЛАТНЫХ</span> <span class="shadow"> прогнозов и моделирования торговли.</span></h3>-->
+<!--        <form id="dDownload" action="SSI/Processor/licenseCheck.php" method="POST" class="flat l-twelve">-->
+<!--            <ul class="l-inline">-->
+<!--                <li class="l-nine"><input type="text" name="email" id="email" class="f-size24 f-l-height60 c-gray" placeholder="Торговый бот в Telegram"></li>-->
+<!--                <li class="l-three l-nmr">-->
+<!--                <input type="hidden" name="email2" id="email2">-->
+<!--                <input type="hidden" name="referred_url_start" id="referred_url_start" value="ninjatrader.com/">-->
+<!--                <input type="hidden" name="ga_label_start" id="ga_label_start" value="Home">-->
+<!--                <input type="submit" class="redFlatSubmit f-size24 f-l-height44 c-white t-center" value="Перейти">-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </form>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div id="bottomHero" class="l-row b-white">-->
+<!--      <div class="l-block">-->
+<!--        <h2 class="f-bold">Ощутите Безграничные возможности торговли на Фьючерсах Binance</h2>-->
+<!--        <p class="l-mb2">Все стратегии торговли на фьючерсах. Как постоянно зарабатывать и не терять деньги. Инструкции для новичков. Создание и настройка индивидуальной технологии заработка. </p>-->
+<!--        <div class="l-three t-center icon clickable">-->
+<!--          <div id="product" class="iconCont"></div>-->
+<!--          <p class="l-nm l-mt1 m-center">-->
+<!--            <a class="t-base d-block">-->
+<!--              <strong class="d-block l-mb1">Услуги для всех трейдеров</strong>-->
+<!--				Ослеживание самых популярных в мире паттернов-->
+<!--            </a>-->
+<!--          </p>-->
+<!--        </div>-->
+<!--        <div class="l-three t-center icon clickable">-->
+<!--          <div id="award" class="iconCont"></div>-->
+<!--          <p class="l-nm l-mt1 m-center">-->
+<!--            <a class="t-base d-block" target="_self">-->
+<!--				<strong class="d-block l-mb1">Много довольных клиентов</strong>-->
+<!--              Мы помогли многим трейдерам. Кто-то даже сумел заработать целое состояние.-->
+<!--            </a>-->
+<!--          </p>-->
+<!--        </div>-->
+<!--        <div class="l-three t-center icon clickable">-->
+<!--          <div id="savings" class="iconCont"></div>-->
+<!--          <p class="l-nm l-mt1 m-center">-->
+<!--            <a class="t-base d-block">-->
+<!--              <strong class="d-block l-mb1">Колосальная экономия времени</strong>-->
+<!--              Вам уже не нужно часами мониторить графики. Программа сделает это за вас.-->
+<!--            </a>-->
+<!--          </p>-->
+<!--        </div>-->
+<!--        <div class="l-three t-center icon clickable l-nmr">-->
+<!--          <div id="support" class="iconCont"></div>-->
+<!--          <p class="l-nm l-mt1 m-center">-->
+<!--          <a class="t-base d-block" target="_self">-->
+<!--            <strong class="d-block l-mb1">Закрытое сообщество</strong>-->
+<!--            Открытые комментарии к прогнозам. Советы и консультации.-->
+<!--          </a>-->
+<!--          </p>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--    <div id="cta" class="l-row">-->
+<!--        <div class="l-block d-grid2C">-->
+<!--            <div>-->
+<!--                <h2 class="l-nmb t-center f-bold c-white">КОЛЛОСАЛЬНЫЕ ВОЗМОЖНОСТИ <span class="d-block f-reg f-ital">для</span>TRADING И ТОРГОВЛИ НА FUTURES</h2>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <h3 class="t-center c-white l-mb1">Победитель конкурса Fintech Award Winner</h3>-->
+<!--                <p class="t-center c-white l-nmb">Второй год подряд Stonks получает признание за уникальное сочетание высокопроизводительной торговой платформы и поддержки в режиме реального времени.</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <div class="l-row b-grayGrad">-->
+<!--      <div class="l-block">-->
+<!--        <h2 class="f-bold">Торгуйте Фьючерсами <span class="c-green">Выгодно</span></h2>-->
+<!--        <p class="l-mb2">Выбери свой режим торговли</p>-->
+<!--        <div class="flexContain">-->
+<!--          <div id class="pr bucketHalf bdrGreen">-->
+<!--            <a href="http://localhost:63342/my_projects/new_stonks/site/SaveWeb2zip-ninjatrader-com/pages/50.html?_ijt=8t9o78l1jao1l9iefaq0ihu7j8&_ij_reload=RELOAD_ON_SAVE" target="_self" class="l-twelve">-->
+<!--              <h3 class="l-twelve l-p2 ">СИГНАЛЫ</h3>-->
+<!--              <div class="ro l-twelve l-p1">-->
+<!--                <p class="l-twelve l-nmb l-mt1 f-size20 f-l-height24 t-center">Получать прогнозы 24/7</p>-->
+<!--                <p class="l-twelve l-nmb f-bold f-size52 f-l-height60 t-center c-green">$50 мес</p>-->
+<!--                <p class="l-twelve l-mb1 f-size20 f-l-height24 t-center">круглосуточный анализ паттернов, остается только повторять. Максимум информации</p>-->
+<!--              </div>-->
+<!--            </a>-->
+<!--          </div>-->
+
+<!--          <div id class="pr bucketHalf bdrGreen">-->
+<!--            <a href="Unlimited-Simulated-Trading" target="_self" class="l-twelve">-->
+<!--              <h3 class="l-twelve l-p2">AUTOMATIC</h3>-->
+<!--              <div class="ro l-twelve l-p1">-->
+<!--                <p class="l-twelve l-nmb l-mt1 f-size20 f-l-height24 t-center">Программа торгует за вас</p>-->
+<!--                <p class="l-twelve l-nmb f-bold f-size52 f-l-height60 t-center c-green">$100 мес</p>-->
+<!--                <p class="l-twelve l-mb1 f-size20 f-l-height24 t-center">автоматизированная торговля</p>-->
+<!--              </div>-->
+<!--            </a>-->
+<!--          </div>-->
+
+<!--        </div>-->
+
+<!--		  <div class="flexContain" style="margin-top: 40px">-->
+<!--			  <div id class="pr bucketHalf bdrGreen">-->
+<!--				  <LINK href="/limited-stonks" target="_self" class="l-twelve">-->
+<!--					  <h3 class="l-twelve l-p2 ">СИГНАЛЫ</h3>-->
+<!--					  <div class="ro l-twelve l-p1">-->
+<!--						  <p class="l-twelve l-nmb l-mt1 f-size20 f-l-height24 t-center">Получать прогнозы 24/7</p>-->
+<!--						  <p class="l-twelve l-nmb f-bold f-size52 f-l-height60 t-center c-green">$30 мес</p>-->
+<!--						  <p class="l-twelve l-mb1 f-size20 f-l-height24 t-center">круглосуточный анализ паттернов, только точки входа</p>-->
+<!--					  </div>-->
+<!--				  </LINK>-->
+<!--			  </div>-->
+
+<!--			  <div id class="pr bucketHalf bdrGreen">-->
+<!--				  <a href="Unlimited-Simulated-Trading" target="_self" class="l-twelve">-->
+<!--					  <h3 class="l-twelve l-p2">КНИГА</h3>-->
+<!--					  <div class="ro l-twelve l-p1">-->
+<!--						  <p class="l-twelve l-nmb l-mt1 f-size20 f-l-height24 t-center">Трейдинг на примерах</p>-->
+<!--						  <p class="l-twelve l-nmb f-bold f-size52 f-l-height60 t-center c-green">$10</p>-->
+<!--						  <p class="l-twelve l-mb1 f-size20 f-l-height24 t-center">наша авторская книга в электронном формате, минимум сухой информации, только практика</p>-->
+<!--					  </div>-->
+<!--				  </a>-->
+<!--			  </div>-->
+
+<!--		  </div>-->
+
+<!--        <p class="l-twelve l-p1 l-mt2 l-mb3 m-f-size32 f-l-height40">зайди и протестируй возможности в нашем телеграм канале  <span class="d-block c-green">ЭТО БЕСПЛАТНО!</span></p>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--    <div class="l-row l-rel" id="indexEco">-->
+<!--      <div class="indexArrow"></div>-->
+<!--      <div class="l-block">-->
+<!--        <div class="l-six">-->
+<!--          <h2 class="t-left c-white">Стратегии <span class="d-block">и риски</span></h2>-->
+<!--          <p class="l-ten t-left c-white">Хотите узнать о преимуществах, недостатках, стратегиях и рисках фьючерсной торговли?</p>-->
+<!--          <a href="./pages/Фьючерсный%20брокер%20_%20Платформа%20для%20торговли%20фьючерсами%20_%20NinjaTrader.html" class="whiteOpen bHover l-left eco">узнать больше</a>-->
+<!--        </div>-->
+<!--        <div class="l-six l-right" id="indexEcoSecond">-->
+<!--          <h2 class="t-right c-white">Обучение <span class="d-block">для новичков</span></h2>-->
+<!--          <p class="l-nine l-right t-right c-white">Обучение трейдингу по прогнозам для начинающих. Пошаговые инструкции с примерами.</p>-->
+<!--          <a href="/Build" class="whiteOpen bHover l-right">узнать больше</a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="indexArrowBottom"></div>-->
+<!--    </div>-->
+
+<!--    <div id="wt_row" class="refresh l-row">-->
+<!--      <div id="wt" class="container">-->
+<!--        <h2>Зачем торговать фьючерсами по прогнозам?</h2>-->
+<!--        <div>-->
+<!--            <h3>Торговля в плюс</h3>-->
+<!--            <p class="t-center">Выберите, какие паттерны хотите остеживать. Полчайте уведомления когда входить в сделку.</p>-->
+<!--            <p class="t-center l-nm"><a href="https://ninjatrader.com/Micro-Emini-Futures" target="_blank" class="redOpen">ПАТТЕРНЫ</a></p>-->
+<!--        </div>-->
+<!--        <div></div>-->
+<!--        <div></div>-->
+<!--        <div>-->
+<!--            <h3>Пассивный доход</h3>-->
+<!--            <p class="t-center">Настройте автоматизированную торговлю по выбранным паттернам. Зарабатывайте.</p>-->
+<!--            <p class="t-center l-nm"><a href="https://ninjatrader.com/Micro-Emini-Futures" target="_blank" class="redOpen">ПОДРОБНЕЕ</a></p>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--    <div id="wtch_row" class="refresh l-row">-->
+<!--        <div id="wtch" class="container">-->
+<!--            <h2 class="f-bold l-mb1">Новичок в крипте? Нажимай и смотри!</h2>-->
+<!--            <p class="l-mb2">Что нужно знать что-бы зарабатывать на крипте. Полезные обучающие видео.</p>-->
+<!--            <div>-->
+<!--                <a href="https://www.youtube.com/watch?v=7LTQuOgbGTs" target="_self">-->
+<!--                  <p>Как пополнить счёт Бинанс P2P</p>-->
+<!--                  <img src="images/binace.jpeg" alt="The Opening Range" loading="lazy">-->
+<!--                </a>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <a href="https://www.youtube.com/watch?v=oCFyfzTLL3M" target="_self">-->
+<!--                  <p>Как Торговать Фьючерсами</p>-->
+<!--                  <img src="images/futures.jpeg" alt="Bars Closing" loading="lazy">-->
+<!--                </a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <footer>-->
+<!--	<div class="l-row">-->
+<!--		<div class="l-block">-->
+<!--			<div class="l-three">-->
+<!--				<ul class="l-eleven l-pr1 l-stacked">-->
+<!--					<li><a href="/blog/" target="_self" class="header">NEWS & BLOG</a></li>-->
+<!--					<div id="posts" class="l-twelve"></div>-->
+<!--					<li><a href="/blog/trade-desk-calendar/" target="_self">Trade Desk Calendar</a></li>-->
+<!--				</ul>-->
+<!--			</div>-->
+<!--			<div class="l-three">-->
+<!--				<ul class="l-stacked">-->
+<!--			    	<li><a href="/GetStarted" target="_self" class="header">TRADING PLATFORM</a></li>-->
+<!--			    	<li><a href="/Analyze" target="_self">Charting Software</a></li>-->
+<!--			    	<li><a href="/Trading-Indicators" target="_self">Trading Indicators</a></li>-->
+<!--			    	<li><a href="/Simulate" target="_self">Simulate</a></li>-->
+<!--			    	<li><a href="/Trade" target="_self">Trade</a></li>-->
+<!--			    	<li><a href="/BuyPlatform" target="_self">Buy Trading Platform</a></li>-->
+<!--			    	<li><a href="/LicenseComparison" target="_self">License Comparison</a></li>-->
+<!--			    	<li><a href="/PlatformDirect" target="_self">Existing User Download</a></li>-->
+<!--			    	<li><a href="/FreeLiveData" target="_self">Free Live Data</a></li>-->
+<!--		    	</ul>-->
+<!--			</div>-->
+<!--			<div class="l-three">-->
+<!--				<ul class="l-stacked">-->
+<!--			    	<li><a href="/Futures" target="_self" class="header">BROKERAGE</a></li>-->
+<!--			    	<li><a href="/Micro-Emini-Futures" target="_self">Micro E-mini Futures</a></li>-->
+<!--			    	<li><a href="/Micro-Bitcoin-Futures" target="_self">Micro Bitcoin Futures</a></li>-->
+<!--			    	<li><a href="/Micro-Crude-Oil-Futures" target="_self">Micro Crude Oil Futures</a></li>-->
+<!--			    	<li><a href="/Nano-Bitcoin-Futures" target="_self">Nano Bitcoin Futures</a></li>-->
+<!--		    	</ul>-->
+<!--		    	<ul class="l-stacked">-->
+<!--			    	<li><a href="/OpenAccount" target="_self" class="header">OPEN ACCOUNT</a></li>-->
+<!--			    	<li><a href="/Futures" target="_self">Futures Broker</a></li>-->
+<!--			    	<li><a href="/Margins-Position-Management" target="_self">Margins</a></li>-->
+<!--			    </ul>-->
+<!--			</div>-->
+<!--			<div class="l-three l-nmr">-->
+<!--				<ul class="l-stacked">-->
+<!--					<li><a href="/Help" target="_self" class="header">HELP</a></li>-->
+<!--					<li><a href="/Help" target="_self">Contact Support</a></li>-->
+<!--					<li><a href="/blog/futures-basics-understanding-futures-trading/" target="_self">Futures Basics</a></li>-->
+<!--					<li><a href="http://www.ninjatrader.com/support/forum/index.php" target="_blank" rel="noopener">Support Forum</a></li>-->
+<!--					<li><a href="/FAQ" target="_self">FAQs</a></li>-->
+<!--				</ul>-->
+<!--				<ul class="l-stacked">-->
+<!--					<li><a href="/AboutUs" target="_self" class="header">ABOUT US</a></li>-->
+<!--					<li><a href="/ContactUs" target="_self">Contact Us</a></li>-->
+<!--					<li><a href="https://ninjatrader.bamboohr.com/jobs/" target="_blank" rel="noopener">Careers</a></li>-->
+<!--				</ul>-->
+<!--			</div>-->
+<!--		  -->
+<!--			<p class="l-twelve l-mb1">Copyright <sup>©</sup> 2018. Все права защищены. StonksPro and the StonksPro logo. Reg. U.S. Pat. & Tm.</p>-->
+<!--			<p class="l-twelve l-mb1">Торговля фьючерсами, иностранной валютой и опционами сопряжена со значительным риском. Прошлые показатели не обязательно свидетельствуют о будущих результатах.</p>-->
+<!--		</div>-->
+<!--	</div>-->
+<!--</footer>-->
+<!--    <script src="js/jquery-2.2.4.min.js"></script>-->
+<!--    <script src="js/plugins-min.js"></script>-->
+<!--    <script src="js/main-min.js"></script>-->
+<!--    <script src="js/NMDY-min.js"></script>-->
+<!--    <script>-->
+<!--      window.onload = function () {-->
+<!--        downloadButton();-->
+<!--      }-->
+<!--    </script>-->
+<!--    -->
+<!--  -->
+<!--</body>-->
+</html>

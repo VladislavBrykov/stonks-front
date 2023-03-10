@@ -1,16 +1,6 @@
 {
   "/_app": "pages/_app.js",
-  "/_document": "pages/_document.js",
-  "/aaaa": "pages/aaaa.html",
-  "/api/hello": "pages/api/hello.js",
-  "/automatic": "pages/automatic.html",
-  "/book": "pages/book.html",
-  "/graphics": "pages/graphics.html",
-  "/": "pages/index.html",
-  "/learning-trade": "pages/learning-trade.html",
-  "/limited-stonks": "pages/limited-stonks.html",
-  "/strategy-and-risks": "pages/strategy-and-risks.html",
-  "/vip-stonks": "pages/vip-stonks.html",
   "/_error": "pages/_error.js",
-  "/404": "pages/404.html"
+  "/_document": "pages/_document.js",
+  "/": "pages/index.js"
 }
